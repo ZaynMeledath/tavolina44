@@ -2,12 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowDown,
   ArrowUpRight,
+  Calendar,
   ChevronLeft,
   ChevronRight,
   Clock,
   ExternalLink,
   Eye,
   FileText,
+  Heart,
   MapPin,
   Menu as MenuIcon,
   Phone,
@@ -25,14 +27,21 @@ import { TavolinaLogo } from "@/components/TavolinaLogo";
 import heroLuxury from "@/assets/hero-luxury.jpg";
 import branzino from "@/assets/branzino.jpg";
 import burrata from "@/assets/burrata.jpg";
-import diningRoom from "@/assets/dining-room.jpg";
-import diningExperience from "@/assets/dining-experience.jpg";
-import cocktailBar from "@/assets/cocktail-bar.jpg";
 import ingredients from "@/assets/ingredients.jpg";
 import pizza from "@/assets/pizza.jpg";
 import steak from "@/assets/steak.jpg";
-import tiramisu from "@/assets/tiramisu.jpg";
-import wine from "@/assets/wine.jpg";
+
+// Verified Tavolina 44 Google Maps Photos
+import gmapsDiningRoom from "@/assets/gmaps-dining-room.jpg";
+import gmapsPolpette from "@/assets/gmaps-polpette.jpg";
+import gmapsCalamariWine from "@/assets/gmaps-calamari-wine.jpg";
+import gmapsAntipastiCarpaccio from "@/assets/gmaps-antipasti-carpaccio.jpg";
+import gmapsBarLounge from "@/assets/gmaps-bar-lounge.jpg";
+import gmapsPizzaArtisan from "@/assets/gmaps-pizza-artisan.jpg";
+import gmapsTiramisu from "@/assets/gmaps-tiramisu.jpg";
+import gmapsBarSpirits from "@/assets/gmaps-bar-spirits.jpg";
+import gmapsCocktailCoupe from "@/assets/gmaps-cocktail-coupe.jpg";
+import gmapsCocktailsBar from "@/assets/gmaps-cocktails-bar.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -542,7 +551,7 @@ const VERIFIED_REVIEWS = [
     source: "Google Business Review",
     rating: 5,
     highlight: "Warm hospitality & intimate atmosphere",
-    photo: diningExperience,
+    photo: gmapsCalamariWine,
   },
   {
     quote:
@@ -560,71 +569,80 @@ const VERIFIED_REVIEWS = [
     source: "Google Business Review",
     rating: 5,
     highlight: "Atmospheric bar & curated libations",
-    photo: cocktailBar,
+    photo: gmapsCocktailsBar,
   },
 ];
 
 // =============================================================================
-// GALLERY IMAGES
+// GALLERY IMAGES (Authentic Tavolina 44 Google Maps Photography)
 // =============================================================================
 const GALLERY_IMAGES = [
   {
-    src: heroLuxury,
-    title: "Fresh Ribbon Pasta",
-    caption: "House-extruded pasta tossed in velvety sauce with fresh basil",
+    src: gmapsDiningRoom,
+    title: "Dining Room & Ambience",
+    caption:
+      "Emerald leather banquettes, exposed brick, and warm rustic timber framing at Villagio Town Center",
     span: "col-span-12 md:col-span-7 aspect-[16/10]",
   },
   {
-    src: diningRoom,
-    title: "The Dining Room",
-    caption: "Atmospheric evening dining at Villagio Town Center",
+    src: gmapsPizzaArtisan,
+    title: "Wood-Fired Artisanal Pizza",
+    caption:
+      "Hand-stretched blistered crust topped with fresh mozzarella, peppery baby arugula, and house-made pesto drizzle",
     span: "col-span-12 md:col-span-5 aspect-[4/3]",
   },
   {
-    src: cocktailBar,
-    title: "The Bar at Tavolina 44",
-    caption: "Polished dark marble, amber backlighting, and craft cocktails",
+    src: gmapsBarSpirits,
+    title: "Curated Spirits & Amari Collection",
+    caption:
+      "Illuminated open brick back-bar featuring Italian amari, aperitivi, and premium small-batch whiskies",
     span: "col-span-12 md:col-span-6 aspect-[16/10]",
   },
   {
-    src: diningExperience,
-    title: "Table Conviviality",
-    caption: "Vintage decanter wine service and shared plates with friends",
+    src: gmapsAntipastiCarpaccio,
+    title: "Artisanal Antipasti & Carpaccio",
+    caption:
+      "Roasted beet & citrus carpaccio with goat cheese, microgreens, and a board of imported Italian salumi and cheeses",
     span: "col-span-12 md:col-span-6 aspect-[16/10]",
   },
   {
-    src: branzino,
-    title: "Herb-Grilled Branzino",
-    caption: "Oak-fired whole sea bass with roasted lemon and herb oil",
+    src: gmapsPolpette,
+    title: "Polpette al Forno",
+    caption:
+      "Cast-iron skillet meatballs simmering in rich San Marzano pomodoro, fresh oregano, and grilled country focaccia",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
   },
   {
-    src: wine,
-    title: "Cellar & Libations",
-    caption: "Curated Italian reds and contemporary craft cocktails",
+    src: gmapsCocktailCoupe,
+    title: "Signature Shaken Coupé",
+    caption:
+      "House botanical craft cocktail with silky foam and fresh garden thyme on a candlelit linen table",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
   },
   {
-    src: burrata,
-    title: "Caprese Burrata",
-    caption: "Fresh burrata, cherry tomatoes, and aged balsamic glaze",
+    src: gmapsTiramisu,
+    title: "Classic House Tiramisu",
+    caption:
+      "Espresso-soaked savoiardi and whipped mascarpone cream dusted with dark cocoa and crowned with an edible orchid",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
   },
   {
-    src: steak,
-    title: "Prime Filet Mignon",
-    caption: "Charred over open embers with gorgonzola potatoes",
+    src: gmapsBarLounge,
+    title: "The Bar & Peacock Lounge",
+    caption:
+      "Poured-concrete bar top, high-back leather barstools, and Tavolina 44's illuminated crest emblem",
     span: "col-span-12 md:col-span-6 aspect-[16/10]",
   },
   {
-    src: pizza,
-    title: "Hearth-Fired Pizza",
-    caption: "Blistered San Marzano crust with fresh fior di latte",
+    src: gmapsCalamariWine,
+    title: "Calamari Fritti & Tuscan Wine",
+    caption:
+      "Golden crispy calamari with lemon and house marinara, paired with Morellino di Scansano at the booth",
     span: "col-span-12 md:col-span-6 aspect-[16/10]",
   },
 ];
 
-const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/Rg1dKN1i4kSxwqRL9";
+const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/opKdMxcdpQJWxsRb7";
 
 function Index() {
   const [scrolled, setScrolled] = useState(false);
@@ -997,8 +1015,8 @@ function Index() {
               <div className="relative lg:col-span-5 reveal-on-scroll delay-200">
                 <div className="editorial-img-container shadow-2xl border border-ivory/10 aspect-[4/5] w-full">
                   <img
-                    src={diningRoom}
-                    alt="Atmospheric dining room and warm candlelight at Tavolina 44"
+                    src={gmapsDiningRoom}
+                    alt="Atmospheric dining room with emerald leather booths at Tavolina 44"
                     className="editorial-img h-full w-full object-cover brightness-95"
                     loading="lazy"
                   />
@@ -1106,18 +1124,18 @@ function Index() {
               </div>
             </div>
 
-            {/* Monumental Dual Composition with Central 3D Sculpture */}
-            <div className="mt-16 grid items-center gap-12 lg:grid-cols-12">
+            {/* Monumental Dual Composition with Central 3D Sculpture & Origin Story */}
+            <div className="mt-16 grid items-center gap-10 lg:gap-8 xl:gap-12 lg:grid-cols-12 w-full min-w-0">
               {/* Italian Wing */}
               <div
-                className={`transition-all duration-700 lg:col-span-4 ${
+                className={`transition-all duration-700 min-w-0 w-full lg:col-span-4 ${
                   activeDuality === "american"
                     ? "opacity-30 blur-[1px]"
                     : "opacity-100"
                 }`}
               >
-                <div className="border-t border-gold/30 pt-6">
-                  <span className="font-serif text-[clamp(3.2rem,6vw,5.5rem)] font-light leading-none tracking-tight text-ivory block">
+                <div className="border-t border-gold/30 pt-6 min-w-0 w-full">
+                  <span className="font-serif text-[clamp(2.1rem,2.8vw,3.6rem)] xl:text-[clamp(2.5rem,3.4vw,4.4rem)] font-light leading-none tracking-tight text-ivory block break-normal">
                     ITALIAN
                   </span>
                   <span className="mt-2 block eyebrow-tag text-gold">
@@ -1130,50 +1148,98 @@ function Index() {
                   </p>
                   <ul className="mt-6 space-y-2 text-xs tracking-wider uppercase text-ivory/70">
                     <li className="flex items-center gap-2">
-                      <span className="h-1 w-1 bg-gold rounded-full" />
+                      <span className="h-1 w-1 bg-gold rounded-full shrink-0" />
                       Hand-Crafted Pasta Shapes
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="h-1 w-1 bg-gold rounded-full" />
+                      <span className="h-1 w-1 bg-gold rounded-full shrink-0" />
                       Aged Balsamico di Modena
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="h-1 w-1 bg-gold rounded-full" />
+                      <span className="h-1 w-1 bg-gold rounded-full shrink-0" />
                       Crispy Arancini Albanese
                     </li>
                   </ul>
                 </div>
               </div>
 
-              {/* 3D Brand Sculpture ("44") */}
-              <div className="flex flex-col items-center justify-center lg:col-span-4">
-                <div className="sculpture-wrapper flex flex-col items-center justify-center py-6">
+              {/* 3D Brand Sculpture ("44") & Origin Story */}
+              <div className="flex flex-col items-center justify-center min-w-0 w-full lg:col-span-4 py-4 lg:py-0">
+                <div className="sculpture-wrapper relative flex flex-col items-center justify-center w-full max-w-sm">
+                  {/* Origin Tag */}
+                  <div className="inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold/5 px-3.5 py-1 text-[0.62rem] uppercase tracking-[0.24em] text-gold mb-2 shadow-sm">
+                    <Heart className="w-3 h-3 text-gold fill-gold/20" />
+                    <span>Two Fours · One Story</span>
+                  </div>
+
+                  {/* 3D Interactive Bronze Sculpture ("44") */}
                   <div
                     ref={sculptureRef}
-                    className="sculpture-glyph sculpture-glow select-none cursor-grab active:cursor-grabbing text-center"
+                    className="sculpture-glyph sculpture-glow select-none cursor-grab active:cursor-grabbing text-center my-1"
                     title="Interactive 3D 44 Emblem — Move cursor to inspect perspective"
                   >
-                    44
+                    <span>4</span>
+                    <span className="opacity-40 text-gold text-[0.7em] mx-[-0.05em] font-sans font-extralight select-none">
+                      ·
+                    </span>
+                    <span>4</span>
                   </div>
-                  <span className="mt-2 text-[0.62rem] uppercase tracking-[0.3em] text-gold/80">
-                    Sculptural Artisan Bronze
-                  </span>
-                  <span className="mt-1 font-serif text-sm italic text-ivory/40">
-                    Tavolina 44 · Katy, Texas
-                  </span>
+
+                  {/* Duo Sub-tag */}
+                  <div className="flex items-center justify-center gap-3 text-[0.64rem] uppercase tracking-[0.22em] text-ivory/70 mt-1">
+                    <span className="text-gold/90 font-medium">
+                      Her Lucky 4
+                    </span>
+                    <span className="h-1 w-1 rounded-full bg-gold/40" />
+                    <span className="text-terracotta/90 font-medium">
+                      His Lucky 4
+                    </span>
+                  </div>
+
+                  {/* Elegant Origin Story Plaque */}
+                  <div className="mt-5 w-full border border-gold/25 bg-gradient-to-b from-charcoal/90 via-espresso/95 to-charcoal/95 p-5 sm:p-6 shadow-2xl backdrop-blur-md rounded-sm text-center relative overflow-hidden group hover:border-gold/50 transition-colors duration-500">
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[1px] w-24 bg-gradient-to-r from-transparent via-gold to-transparent" />
+
+                    <div className="flex items-center justify-center gap-2 text-gold text-xs font-serif italic mb-2">
+                      <Calendar className="w-3.5 h-3.5 text-gold/80" />
+                      <span>Destined on December 4th</span>
+                    </div>
+
+                    <p className="text-xs font-light leading-relaxed text-bone/85">
+                      For the husband-and-wife founders behind Tavolina 44, the
+                      number{" "}
+                      <strong className="font-medium text-gold">4</strong> was
+                      always their personal lucky number. When life brought them
+                      together on{" "}
+                      <strong className="font-medium text-ivory">
+                        December 4th
+                      </strong>
+                      —followed by life-changing milestones each falling on the
+                      fourth—bringing their two fours together became their
+                      symbol of destiny.
+                    </p>
+
+                    <div className="mt-4 pt-3 border-t border-ivory/10 flex items-center justify-center gap-2 sm:gap-4 text-[0.58rem] sm:text-[0.62rem] uppercase tracking-[0.16em] text-ivory/60">
+                      <span>Two Lives</span>
+                      <span className="text-gold">✦</span>
+                      <span>Two Cultures</span>
+                      <span className="text-gold">✦</span>
+                      <span>One Table</span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               {/* American Wing */}
               <div
-                className={`transition-all duration-700 lg:col-span-4 ${
+                className={`transition-all duration-700 min-w-0 w-full lg:col-span-4 ${
                   activeDuality === "italian"
                     ? "opacity-30 blur-[1px]"
                     : "opacity-100"
                 }`}
               >
-                <div className="border-t border-terracotta/40 pt-6 text-left lg:text-right">
-                  <span className="font-serif text-[clamp(3.2rem,6vw,5.5rem)] font-light leading-none tracking-tight text-terracotta block">
+                <div className="border-t border-terracotta/40 pt-6 text-left lg:text-right min-w-0 w-full">
+                  <span className="font-serif text-[clamp(2.1rem,2.8vw,3.6rem)] xl:text-[clamp(2.5rem,3.4vw,4.4rem)] font-light leading-none tracking-tight text-terracotta block break-normal">
                     AMERICAN
                   </span>
                   <span className="mt-2 block eyebrow-tag text-gold lg:text-right">
@@ -1184,18 +1250,18 @@ function Index() {
                     Mignon charred over red-hot oak, bold craft cocktail
                     mixology, and unstuffy, heartfelt hospitality.
                   </p>
-                  <ul className="mt-6 space-y-2 text-xs tracking-wider uppercase text-ivory/70 lg:items-end">
+                  <ul className="mt-6 space-y-2 text-xs tracking-wider uppercase text-ivory/70">
                     <li className="flex items-center gap-2 lg:justify-end">
                       Prime Oak-Charred Steaks
-                      <span className="h-1 w-1 bg-terracotta rounded-full" />
+                      <span className="h-1 w-1 bg-terracotta rounded-full shrink-0" />
                     </li>
                     <li className="flex items-center gap-2 lg:justify-end">
                       Jumbo Lump Blue Crab Cakes
-                      <span className="h-1 w-1 bg-terracotta rounded-full" />
+                      <span className="h-1 w-1 bg-terracotta rounded-full shrink-0" />
                     </li>
                     <li className="flex items-center gap-2 lg:justify-end">
                       Contemporary Katy Gathering
-                      <span className="h-1 w-1 bg-terracotta rounded-full" />
+                      <span className="h-1 w-1 bg-terracotta rounded-full shrink-0" />
                     </li>
                   </ul>
                 </div>
@@ -1252,16 +1318,16 @@ function Index() {
                   className="editorial-img-container border border-ivory/10 shadow-2xl cursor-pointer"
                   onClick={() =>
                     setLightboxImg({
-                      src: cocktailBar,
-                      title: "The Bar at Tavolina 44",
+                      src: gmapsCocktailsBar,
+                      title: "Handcrafted Bar Cocktails",
                       caption:
-                        "Handcrafted cocktails and Italian aperitivi in an amber-lit setting.",
+                        "Artisan mixology, espresso martinis, and refreshing citrus spritzes on the concrete bar top.",
                     })
                   }
                 >
                   <img
-                    src={cocktailBar}
-                    alt="Polished dark marble bar with cocktail glass and amber glowing bottles"
+                    src={gmapsCocktailsBar}
+                    alt="Handcrafted espresso martini and mint citrus spritz at Tavolina 44 bar"
                     className="editorial-img aspect-[3/4] w-full object-cover brightness-95"
                     loading="lazy"
                   />
@@ -1280,26 +1346,26 @@ function Index() {
                   className="editorial-img-container border border-ivory/10 shadow-2xl mt-8 cursor-pointer"
                   onClick={() =>
                     setLightboxImg({
-                      src: diningExperience,
-                      title: "Table Conviviality",
+                      src: gmapsDiningRoom,
+                      title: "The Dining Room",
                       caption:
-                        "Shared bottles, rustic bread, and memories created over the table.",
+                        "Warm amber glow, emerald leather banquettes, and rustic architectural timber at Villagio Town Center.",
                     })
                   }
                 >
                   <img
-                    src={diningExperience}
-                    alt="Convivial table dinner with red wine decanter and sharing plates"
+                    src={gmapsDiningRoom}
+                    alt="Atmospheric dining room with emerald booths and timber beams at Tavolina 44"
                     className="editorial-img aspect-[3/4] w-full object-cover brightness-95"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-espresso/80 via-transparent to-transparent opacity-80" />
                   <div className="absolute bottom-4 left-4 right-4">
                     <span className="eyebrow-tag text-gold text-[0.58rem]">
-                      The Table
+                      The Room
                     </span>
                     <p className="font-serif text-lg text-ivory leading-tight mt-1 font-light">
-                      Wine &amp; Conviviality
+                      Dining Atmosphere
                     </p>
                   </div>
                 </div>

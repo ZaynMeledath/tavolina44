@@ -19,133 +19,168 @@ var public_assets_data_default = {
 	"/favicon.png": {
 		"type": "image/png",
 		"etag": "\"158a-8ppxO1uuKHHliT+Kb5KJwndVH6k\"",
-		"mtime": "2026-09-09T17:19:54.667Z",
+		"mtime": "2026-09-09T18:52:46.636Z",
 		"size": 5514,
 		"path": "../public/favicon.png"
 	},
 	"/menu-card-1.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"5062b-3vl1IvZguAhhNvfcpER+UfNmfjA\"",
-		"mtime": "2026-09-09T17:19:54.668Z",
+		"mtime": "2026-09-09T18:52:46.637Z",
 		"size": 329259,
 		"path": "../public/menu-card-1.jpg"
 	},
 	"/robots.txt": {
 		"type": "text/plain; charset=utf-8",
 		"etag": "\"a0-CKGXSIe7TSsqDTmGm/nY1t/o5d0\"",
-		"mtime": "2026-09-09T17:19:54.667Z",
+		"mtime": "2026-09-09T18:52:46.636Z",
 		"size": 160,
 		"path": "../public/robots.txt"
 	},
 	"/menu-card-2.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"4abf7-go1slTIpf61pFcJX/tS01UvSSe8\"",
-		"mtime": "2026-09-09T17:19:54.668Z",
+		"mtime": "2026-09-09T18:52:46.637Z",
 		"size": 306167,
 		"path": "../public/menu-card-2.jpg"
 	},
-	"/assets/index-DWyYAqlK.js": {
-		"type": "text/javascript; charset=utf-8",
-		"etag": "\"54fef-1gJ7kqe6GEBFsiBUO+M7Z3QBbQg\"",
-		"mtime": "2026-09-09T17:19:54.397Z",
-		"size": 348143,
-		"path": "../public/assets/index-DWyYAqlK.js"
+	"/assets/gmaps-antipasti-carpaccio-Biu6Tn6F.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"4daf9-HWZJ1flXz0Tp/gfhANbsd9qt9Jw\"",
+		"mtime": "2026-09-09T18:52:46.334Z",
+		"size": 318201,
+		"path": "../public/assets/gmaps-antipasti-carpaccio-Biu6Tn6F.jpg"
 	},
-	"/assets/routes-BeMxwMEH.js": {
+	"/assets/gmaps-calamari-wine-CqcXOCUT.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"4fab8-aUycc/VJ4BoDAeXzRsJFQgdvYtU\"",
+		"mtime": "2026-09-09T18:52:46.337Z",
+		"size": 326328,
+		"path": "../public/assets/gmaps-calamari-wine-CqcXOCUT.jpg"
+	},
+	"/assets/gmaps-bar-lounge-Dh-Uu7_z.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"6da82-wi8SOsXwvDeTWtO40GK9Efz7/Yk\"",
+		"mtime": "2026-09-09T18:52:46.334Z",
+		"size": 449154,
+		"path": "../public/assets/gmaps-bar-lounge-Dh-Uu7_z.jpg"
+	},
+	"/assets/gmaps-cocktails-bar-CU4fBrLM.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"485cd-5aVoDhNNnmZIn+jBT/Fz9EDYjuQ\"",
+		"mtime": "2026-09-09T18:52:46.338Z",
+		"size": 296397,
+		"path": "../public/assets/gmaps-cocktails-bar-CU4fBrLM.jpg"
+	},
+	"/assets/gmaps-pizza-artisan-CvatvhEA.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"7da29-DFUtIgFo39TcY6nCIW+NRwPYxlE\"",
+		"mtime": "2026-09-09T18:52:46.338Z",
+		"size": 514601,
+		"path": "../public/assets/gmaps-pizza-artisan-CvatvhEA.jpg"
+	},
+	"/assets/gmaps-polpette-BG9ErA1u.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"6f9f1-RSrIrhTLOkAB/Xqn0HFVySPPEO8\"",
+		"mtime": "2026-09-09T18:52:46.339Z",
+		"size": 457201,
+		"path": "../public/assets/gmaps-polpette-BG9ErA1u.jpg"
+	},
+	"/assets/index-QBOhMBtD.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"16535-oh0DYv4/RrulYy/GFNzsjVWgl5o\"",
-		"mtime": "2026-09-09T17:19:54.397Z",
-		"size": 91445,
-		"path": "../public/assets/routes-BeMxwMEH.js"
+		"etag": "\"54fef-NoSjmETSOL9JDBlcTLx2viJmYkQ\"",
+		"mtime": "2026-09-09T18:52:46.333Z",
+		"size": 348143,
+		"path": "../public/assets/index-QBOhMBtD.js"
+	},
+	"/assets/routes-CO7tAzAI.js": {
+		"type": "text/javascript; charset=utf-8",
+		"etag": "\"17423-OcpEI93eDdjWIPrDQfIilT/FFNI\"",
+		"mtime": "2026-09-09T18:52:46.333Z",
+		"size": 95267,
+		"path": "../public/assets/routes-CO7tAzAI.js"
+	},
+	"/assets/styles-BfvbuLgc.css": {
+		"type": "text/css; charset=utf-8",
+		"etag": "\"1aed9-H6DOFwCuwKKIaW92Y9iHNrUeKM4\"",
+		"mtime": "2026-09-09T18:52:46.343Z",
+		"size": 110297,
+		"path": "../public/assets/styles-BfvbuLgc.css"
 	},
 	"/assets/pizza-hF9odjuO.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"275e0-Z8b3aH470eY2oRXFVc3vZT7SJhc\"",
-		"mtime": "2026-09-09T17:19:54.400Z",
+		"mtime": "2026-09-09T18:52:46.340Z",
 		"size": 161248,
 		"path": "../public/assets/pizza-hF9odjuO.jpg"
-	},
-	"/assets/styles-CtsuRwRS.css": {
-		"type": "text/css; charset=utf-8",
-		"etag": "\"1a0ee-YTHaAwioycK3dHdKM4nGdDHMnbA\"",
-		"mtime": "2026-09-09T17:19:54.401Z",
-		"size": 106734,
-		"path": "../public/assets/styles-CtsuRwRS.css"
 	},
 	"/assets/steak-BBjTSFBb.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"2b907-61/aKT8Xp0pNqElUgzf6ly8HM1E\"",
-		"mtime": "2026-09-09T17:19:54.400Z",
+		"mtime": "2026-09-09T18:52:46.341Z",
 		"size": 178439,
 		"path": "../public/assets/steak-BBjTSFBb.jpg"
-	},
-	"/assets/dining-room-QmmmjRUV.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"32bba-IZJw7jOxw7jkK1fwbKEvC93R5e0\"",
-		"mtime": "2026-09-09T17:19:54.399Z",
-		"size": 207802,
-		"path": "../public/assets/dining-room-QmmmjRUV.jpg"
-	},
-	"/assets/wine-DoA5p8A5.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"23cde-SBTlBn+gtgxlDGo3I7BJaJHEcPc\"",
-		"mtime": "2026-09-09T17:19:54.402Z",
-		"size": 146654,
-		"path": "../public/assets/wine-DoA5p8A5.jpg"
-	},
-	"/tavolina44.png": {
-		"type": "image/png",
-		"etag": "\"e3dfe-JCATeTcxK6EMEnTAaDAA7Zq+S3A\"",
-		"mtime": "2026-09-09T17:19:54.669Z",
-		"size": 933374,
-		"path": "../public/tavolina44.png"
 	},
 	"/assets/branzino-8b4bDtx-.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"d1f21-a9chs2aCAbJWafC3O3a1ol/cvj4\"",
-		"mtime": "2026-09-09T17:19:54.398Z",
+		"mtime": "2026-09-09T18:52:46.333Z",
 		"size": 859937,
 		"path": "../public/assets/branzino-8b4bDtx-.jpg"
+	},
+	"/assets/gmaps-cocktail-coupe-tMUoo3YU.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"826a7-n3OvpJoclpjez8/pnVbB4G4DQWs\"",
+		"mtime": "2026-09-09T18:52:46.338Z",
+		"size": 534183,
+		"path": "../public/assets/gmaps-cocktail-coupe-tMUoo3YU.jpg"
+	},
+	"/assets/gmaps-bar-spirits-BWystseY.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"81298-X7gDpC6IPBbfOggcPkCeZ2RruMw\"",
+		"mtime": "2026-09-09T18:52:46.337Z",
+		"size": 529048,
+		"path": "../public/assets/gmaps-bar-spirits-BWystseY.jpg"
+	},
+	"/assets/gmaps-dining-room-C2P8_bgs.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"81835-6fsxe9bxcux6u9827H/t0j/dluA\"",
+		"mtime": "2026-09-09T18:52:46.338Z",
+		"size": 530485,
+		"path": "../public/assets/gmaps-dining-room-C2P8_bgs.jpg"
+	},
+	"/assets/gmaps-tiramisu-DUYOMd6H.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"4fe47-Arni3KWkt1KJf8H8U5cbtgBPDz0\"",
+		"mtime": "2026-09-09T18:52:46.339Z",
+		"size": 327239,
+		"path": "../public/assets/gmaps-tiramisu-DUYOMd6H.jpg"
 	},
 	"/assets/burrata-BxYJhu57.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"c0a81-Zxgq/GxDJD/PXnXuDocEXf74e84\"",
-		"mtime": "2026-09-09T17:19:54.398Z",
+		"mtime": "2026-09-09T18:52:46.334Z",
 		"size": 789121,
 		"path": "../public/assets/burrata-BxYJhu57.jpg"
-	},
-	"/assets/cocktail-bar-BFa63126.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"d04ec-UPy7ITFxaaeaOqgIrtid1Rmxigk\"",
-		"mtime": "2026-09-09T17:19:54.399Z",
-		"size": 853228,
-		"path": "../public/assets/cocktail-bar-BFa63126.jpg"
-	},
-	"/assets/dining-experience-BpVKDtCG.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"bff03-MXFIMbFt6cgrCZPBw/jY0wzZHP8\"",
-		"mtime": "2026-09-09T17:19:54.399Z",
-		"size": 786179,
-		"path": "../public/assets/dining-experience-BpVKDtCG.jpg"
-	},
-	"/assets/hero-luxury-xxLx8ejU.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"b1ce4-WdnODDQ7/Wuo1IckaHhEyzGCsm4\"",
-		"mtime": "2026-09-09T17:19:54.399Z",
-		"size": 728292,
-		"path": "../public/assets/hero-luxury-xxLx8ejU.jpg"
 	},
 	"/assets/ingredients-Bg-4H3iW.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"dcec2-eeAKGddmY3ObwQdEsoyMJBzlkXU\"",
-		"mtime": "2026-09-09T17:19:54.400Z",
+		"mtime": "2026-09-09T18:52:46.340Z",
 		"size": 904898,
 		"path": "../public/assets/ingredients-Bg-4H3iW.jpg"
+	},
+	"/assets/hero-luxury-xxLx8ejU.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"b1ce4-WdnODDQ7/Wuo1IckaHhEyzGCsm4\"",
+		"mtime": "2026-09-09T18:52:46.340Z",
+		"size": 728292,
+		"path": "../public/assets/hero-luxury-xxLx8ejU.jpg"
 	},
 	"/assets/tavolina44-DNFwVASZ.png": {
 		"type": "image/png",
 		"etag": "\"e3dfe-JCATeTcxK6EMEnTAaDAA7Zq+S3A\"",
-		"mtime": "2026-09-09T17:19:54.401Z",
+		"mtime": "2026-09-09T18:52:46.343Z",
 		"size": 933374,
 		"path": "../public/assets/tavolina44-DNFwVASZ.png"
 	}

@@ -1,11 +1,11 @@
 import { n as __toESM } from "../_runtime.mjs";
 import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { a as Phone, c as ExternalLink, d as ChevronLeft, f as ArrowUpRight, i as Star, l as Clock, n as Wine, o as MapPin, p as ArrowDown, r as UtensilsCrossed, s as Eye, t as X, u as ChevronRight } from "../_libs/lucide-react.mjs";
+import { a as Phone, c as Eye, d as ChevronRight, f as ChevronLeft, h as ArrowDown, i as Star, l as ExternalLink, m as ArrowUpRight, n as Wine, o as MapPin, p as Calendar, r as UtensilsCrossed, s as Heart, t as X, u as Clock } from "../_libs/lucide-react.mjs";
 import { t as Slot } from "../_libs/radix-ui__react-slot.mjs";
 import { n as clsx, t as cva } from "../_libs/class-variance-authority+clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-J2bndalf.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-eNNQoCjy.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function cn(...inputs) {
@@ -71,13 +71,19 @@ function TavolinaLogo({ className = "", imgClassName = "", withBackdrop = false,
 var hero_luxury_default = "/assets/hero-luxury-xxLx8ejU.jpg";
 var branzino_default = "/assets/branzino-8b4bDtx-.jpg";
 var burrata_default = "/assets/burrata-BxYJhu57.jpg";
-var dining_room_default = "/assets/dining-room-QmmmjRUV.jpg";
-var dining_experience_default = "/assets/dining-experience-BpVKDtCG.jpg";
-var cocktail_bar_default = "/assets/cocktail-bar-BFa63126.jpg";
 var ingredients_default = "/assets/ingredients-Bg-4H3iW.jpg";
 var pizza_default = "/assets/pizza-hF9odjuO.jpg";
 var steak_default = "/assets/steak-BBjTSFBb.jpg";
-var wine_default = "/assets/wine-DoA5p8A5.jpg";
+var gmaps_dining_room_default = "/assets/gmaps-dining-room-C2P8_bgs.jpg";
+var gmaps_polpette_default = "/assets/gmaps-polpette-BG9ErA1u.jpg";
+var gmaps_calamari_wine_default = "/assets/gmaps-calamari-wine-CqcXOCUT.jpg";
+var gmaps_antipasti_carpaccio_default = "/assets/gmaps-antipasti-carpaccio-Biu6Tn6F.jpg";
+var gmaps_bar_lounge_default = "/assets/gmaps-bar-lounge-Dh-Uu7_z.jpg";
+var gmaps_pizza_artisan_default = "/assets/gmaps-pizza-artisan-CvatvhEA.jpg";
+var gmaps_tiramisu_default = "/assets/gmaps-tiramisu-DUYOMd6H.jpg";
+var gmaps_bar_spirits_default = "/assets/gmaps-bar-spirits-BWystseY.jpg";
+var gmaps_cocktail_coupe_default = "/assets/gmaps-cocktail-coupe-tMUoo3YU.jpg";
+var gmaps_cocktails_bar_default = "/assets/gmaps-cocktails-bar-CU4fBrLM.jpg";
 var DINNER_MENU = [
 	{
 		category: "Cold Appetizers",
@@ -532,7 +538,7 @@ var VERIFIED_REVIEWS = [
 		source: "Google Business Review",
 		rating: 5,
 		highlight: "Warm hospitality & intimate atmosphere",
-		photo: dining_experience_default
+		photo: gmaps_calamari_wine_default
 	},
 	{
 		quote: "The handmade pasta here is extraordinary. The texture holds beautifully and the richness of the sauces is balanced and authentic. You can immediately tell the kitchen uses high-caliber ingredients.",
@@ -548,66 +554,66 @@ var VERIFIED_REVIEWS = [
 		source: "Google Business Review",
 		rating: 5,
 		highlight: "Atmospheric bar & curated libations",
-		photo: cocktail_bar_default
+		photo: gmaps_cocktails_bar_default
 	}
 ];
 var GALLERY_IMAGES = [
 	{
-		src: hero_luxury_default,
-		title: "Fresh Ribbon Pasta",
-		caption: "House-extruded pasta tossed in velvety sauce with fresh basil",
+		src: gmaps_dining_room_default,
+		title: "Dining Room & Ambience",
+		caption: "Emerald leather banquettes, exposed brick, and warm rustic timber framing at Villagio Town Center",
 		span: "col-span-12 md:col-span-7 aspect-[16/10]"
 	},
 	{
-		src: dining_room_default,
-		title: "The Dining Room",
-		caption: "Atmospheric evening dining at Villagio Town Center",
+		src: gmaps_pizza_artisan_default,
+		title: "Wood-Fired Artisanal Pizza",
+		caption: "Hand-stretched blistered crust topped with fresh mozzarella, peppery baby arugula, and house-made pesto drizzle",
 		span: "col-span-12 md:col-span-5 aspect-[4/3]"
 	},
 	{
-		src: cocktail_bar_default,
-		title: "The Bar at Tavolina 44",
-		caption: "Polished dark marble, amber backlighting, and craft cocktails",
+		src: gmaps_bar_spirits_default,
+		title: "Curated Spirits & Amari Collection",
+		caption: "Illuminated open brick back-bar featuring Italian amari, aperitivi, and premium small-batch whiskies",
 		span: "col-span-12 md:col-span-6 aspect-[16/10]"
 	},
 	{
-		src: dining_experience_default,
-		title: "Table Conviviality",
-		caption: "Vintage decanter wine service and shared plates with friends",
+		src: gmaps_antipasti_carpaccio_default,
+		title: "Artisanal Antipasti & Carpaccio",
+		caption: "Roasted beet & citrus carpaccio with goat cheese, microgreens, and a board of imported Italian salumi and cheeses",
 		span: "col-span-12 md:col-span-6 aspect-[16/10]"
 	},
 	{
-		src: branzino_default,
-		title: "Herb-Grilled Branzino",
-		caption: "Oak-fired whole sea bass with roasted lemon and herb oil",
+		src: gmaps_polpette_default,
+		title: "Polpette al Forno",
+		caption: "Cast-iron skillet meatballs simmering in rich San Marzano pomodoro, fresh oregano, and grilled country focaccia",
 		span: "col-span-12 md:col-span-4 aspect-[4/5]"
 	},
 	{
-		src: wine_default,
-		title: "Cellar & Libations",
-		caption: "Curated Italian reds and contemporary craft cocktails",
+		src: gmaps_cocktail_coupe_default,
+		title: "Signature Shaken Coupé",
+		caption: "House botanical craft cocktail with silky foam and fresh garden thyme on a candlelit linen table",
 		span: "col-span-12 md:col-span-4 aspect-[4/5]"
 	},
 	{
-		src: burrata_default,
-		title: "Caprese Burrata",
-		caption: "Fresh burrata, cherry tomatoes, and aged balsamic glaze",
+		src: gmaps_tiramisu_default,
+		title: "Classic House Tiramisu",
+		caption: "Espresso-soaked savoiardi and whipped mascarpone cream dusted with dark cocoa and crowned with an edible orchid",
 		span: "col-span-12 md:col-span-4 aspect-[4/5]"
 	},
 	{
-		src: steak_default,
-		title: "Prime Filet Mignon",
-		caption: "Charred over open embers with gorgonzola potatoes",
+		src: gmaps_bar_lounge_default,
+		title: "The Bar & Peacock Lounge",
+		caption: "Poured-concrete bar top, high-back leather barstools, and Tavolina 44's illuminated crest emblem",
 		span: "col-span-12 md:col-span-6 aspect-[16/10]"
 	},
 	{
-		src: pizza_default,
-		title: "Hearth-Fired Pizza",
-		caption: "Blistered San Marzano crust with fresh fior di latte",
+		src: gmaps_calamari_wine_default,
+		title: "Calamari Fritti & Tuscan Wine",
+		caption: "Golden crispy calamari with lemon and house marinara, paired with Morellino di Scansano at the booth",
 		span: "col-span-12 md:col-span-6 aspect-[16/10]"
 	}
 ];
-var GOOGLE_MAPS_URL = "https://maps.app.goo.gl/Rg1dKN1i4kSxwqRL9";
+var GOOGLE_MAPS_URL = "https://maps.app.goo.gl/opKdMxcdpQJWxsRb7";
 function Index() {
 	const [scrolled, setScrolled] = (0, import_react.useState)(false);
 	const [mobileOpen, setMobileOpen] = (0, import_react.useState)(false);
@@ -910,8 +916,8 @@ function Index() {
 									className: "editorial-img-container shadow-2xl border border-ivory/10 aspect-[4/5] w-full",
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-											src: dining_room_default,
-											alt: "Atmospheric dining room and warm candlelight at Tavolina 44",
+											src: gmaps_dining_room_default,
+											alt: "Atmospheric dining room with emerald leather booths at Tavolina 44",
 											className: "editorial-img h-full w-full object-cover brightness-95",
 											loading: "lazy"
 										}),
@@ -1023,15 +1029,15 @@ function Index() {
 								]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "mt-16 grid items-center gap-12 lg:grid-cols-12",
+								className: "mt-16 grid items-center gap-10 lg:gap-8 xl:gap-12 lg:grid-cols-12 w-full min-w-0",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: `transition-all duration-700 lg:col-span-4 ${activeDuality === "american" ? "opacity-30 blur-[1px]" : "opacity-100"}`,
+										className: `transition-all duration-700 min-w-0 w-full lg:col-span-4 ${activeDuality === "american" ? "opacity-30 blur-[1px]" : "opacity-100"}`,
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "border-t border-gold/30 pt-6",
+											className: "border-t border-gold/30 pt-6 min-w-0 w-full",
 											children: [
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "font-serif text-[clamp(3.2rem,6vw,5.5rem)] font-light leading-none tracking-tight text-ivory block",
+													className: "font-serif text-[clamp(2.1rem,2.8vw,3.6rem)] xl:text-[clamp(2.5rem,3.4vw,4.4rem)] font-light leading-none tracking-tight text-ivory block break-normal",
 													children: "ITALIAN"
 												}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -1047,15 +1053,15 @@ function Index() {
 													children: [
 														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 															className: "flex items-center gap-2",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1 w-1 bg-gold rounded-full" }), "Hand-Crafted Pasta Shapes"]
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1 w-1 bg-gold rounded-full shrink-0" }), "Hand-Crafted Pasta Shapes"]
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 															className: "flex items-center gap-2",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1 w-1 bg-gold rounded-full" }), "Aged Balsamico di Modena"]
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1 w-1 bg-gold rounded-full shrink-0" }), "Aged Balsamico di Modena"]
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 															className: "flex items-center gap-2",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1 w-1 bg-gold rounded-full" }), "Crispy Arancini Albanese"]
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1 w-1 bg-gold rounded-full shrink-0" }), "Crispy Arancini Albanese"]
 														})
 													]
 												})
@@ -1063,34 +1069,95 @@ function Index() {
 										})
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "flex flex-col items-center justify-center lg:col-span-4",
+										className: "flex flex-col items-center justify-center min-w-0 w-full lg:col-span-4 py-4 lg:py-0",
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "sculpture-wrapper flex flex-col items-center justify-center py-6",
+											className: "sculpture-wrapper relative flex flex-col items-center justify-center w-full max-w-sm",
 											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold/5 px-3.5 py-1 text-[0.62rem] uppercase tracking-[0.24em] text-gold mb-2 shadow-sm",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Heart, { className: "w-3 h-3 text-gold fill-gold/20" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Two Fours · One Story" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 													ref: sculptureRef,
-													className: "sculpture-glyph sculpture-glow select-none cursor-grab active:cursor-grabbing text-center",
+													className: "sculpture-glyph sculpture-glow select-none cursor-grab active:cursor-grabbing text-center my-1",
 													title: "Interactive 3D 44 Emblem — Move cursor to inspect perspective",
-													children: "44"
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "4" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "opacity-40 text-gold text-[0.7em] mx-[-0.05em] font-sans font-extralight select-none",
+															children: "·"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "4" })
+													]
 												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "mt-2 text-[0.62rem] uppercase tracking-[0.3em] text-gold/80",
-													children: "Sculptural Artisan Bronze"
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center justify-center gap-3 text-[0.64rem] uppercase tracking-[0.22em] text-ivory/70 mt-1",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-gold/90 font-medium",
+															children: "Her Lucky 4"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1 w-1 rounded-full bg-gold/40" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-terracotta/90 font-medium",
+															children: "His Lucky 4"
+														})
+													]
 												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "mt-1 font-serif text-sm italic text-ivory/40",
-													children: "Tavolina 44 · Katy, Texas"
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "mt-5 w-full border border-gold/25 bg-gradient-to-b from-charcoal/90 via-espresso/95 to-charcoal/95 p-5 sm:p-6 shadow-2xl backdrop-blur-md rounded-sm text-center relative overflow-hidden group hover:border-gold/50 transition-colors duration-500",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute top-0 left-1/2 -translate-x-1/2 h-[1px] w-24 bg-gradient-to-r from-transparent via-gold to-transparent" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+															className: "flex items-center justify-center gap-2 text-gold text-xs font-serif italic mb-2",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Calendar, { className: "w-3.5 h-3.5 text-gold/80" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Destined on December 4th" })]
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+															className: "text-xs font-light leading-relaxed text-bone/85",
+															children: [
+																"For the husband-and-wife founders behind Tavolina 44, the number",
+																" ",
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																	className: "font-medium text-gold",
+																	children: "4"
+																}),
+																" was always their personal lucky number. When life brought them together on",
+																" ",
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																	className: "font-medium text-ivory",
+																	children: "December 4th"
+																}),
+																"—followed by life-changing milestones each falling on the fourth—bringing their two fours together became their symbol of destiny."
+															]
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+															className: "mt-4 pt-3 border-t border-ivory/10 flex items-center justify-center gap-2 sm:gap-4 text-[0.58rem] sm:text-[0.62rem] uppercase tracking-[0.16em] text-ivory/60",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Two Lives" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																	className: "text-gold",
+																	children: "✦"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Two Cultures" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																	className: "text-gold",
+																	children: "✦"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "One Table" })
+															]
+														})
+													]
 												})
 											]
 										})
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: `transition-all duration-700 lg:col-span-4 ${activeDuality === "italian" ? "opacity-30 blur-[1px]" : "opacity-100"}`,
+										className: `transition-all duration-700 min-w-0 w-full lg:col-span-4 ${activeDuality === "italian" ? "opacity-30 blur-[1px]" : "opacity-100"}`,
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "border-t border-terracotta/40 pt-6 text-left lg:text-right",
+											className: "border-t border-terracotta/40 pt-6 text-left lg:text-right min-w-0 w-full",
 											children: [
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "font-serif text-[clamp(3.2rem,6vw,5.5rem)] font-light leading-none tracking-tight text-terracotta block",
+													className: "font-serif text-[clamp(2.1rem,2.8vw,3.6rem)] xl:text-[clamp(2.5rem,3.4vw,4.4rem)] font-light leading-none tracking-tight text-terracotta block break-normal",
 													children: "AMERICAN"
 												}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -1102,19 +1169,19 @@ function Index() {
 													children: "The vibrancy of modern American dining. Prime aged Filet Mignon charred over red-hot oak, bold craft cocktail mixology, and unstuffy, heartfelt hospitality."
 												}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-													className: "mt-6 space-y-2 text-xs tracking-wider uppercase text-ivory/70 lg:items-end",
+													className: "mt-6 space-y-2 text-xs tracking-wider uppercase text-ivory/70",
 													children: [
 														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 															className: "flex items-center gap-2 lg:justify-end",
-															children: ["Prime Oak-Charred Steaks", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1 w-1 bg-terracotta rounded-full" })]
+															children: ["Prime Oak-Charred Steaks", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1 w-1 bg-terracotta rounded-full shrink-0" })]
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 															className: "flex items-center gap-2 lg:justify-end",
-															children: ["Jumbo Lump Blue Crab Cakes", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1 w-1 bg-terracotta rounded-full" })]
+															children: ["Jumbo Lump Blue Crab Cakes", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1 w-1 bg-terracotta rounded-full shrink-0" })]
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 															className: "flex items-center gap-2 lg:justify-end",
-															children: ["Contemporary Katy Gathering", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1 w-1 bg-terracotta rounded-full" })]
+															children: ["Contemporary Katy Gathering", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1 w-1 bg-terracotta rounded-full shrink-0" })]
 														})
 													]
 												})
@@ -1171,14 +1238,14 @@ function Index() {
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "editorial-img-container border border-ivory/10 shadow-2xl cursor-pointer",
 									onClick: () => setLightboxImg({
-										src: cocktail_bar_default,
-										title: "The Bar at Tavolina 44",
-										caption: "Handcrafted cocktails and Italian aperitivi in an amber-lit setting."
+										src: gmaps_cocktails_bar_default,
+										title: "Handcrafted Bar Cocktails",
+										caption: "Artisan mixology, espresso martinis, and refreshing citrus spritzes on the concrete bar top."
 									}),
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-											src: cocktail_bar_default,
-											alt: "Polished dark marble bar with cocktail glass and amber glowing bottles",
+											src: gmaps_cocktails_bar_default,
+											alt: "Handcrafted espresso martini and mint citrus spritz at Tavolina 44 bar",
 											className: "editorial-img aspect-[3/4] w-full object-cover brightness-95",
 											loading: "lazy"
 										}),
@@ -1197,14 +1264,14 @@ function Index() {
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "editorial-img-container border border-ivory/10 shadow-2xl mt-8 cursor-pointer",
 									onClick: () => setLightboxImg({
-										src: dining_experience_default,
-										title: "Table Conviviality",
-										caption: "Shared bottles, rustic bread, and memories created over the table."
+										src: gmaps_dining_room_default,
+										title: "The Dining Room",
+										caption: "Warm amber glow, emerald leather banquettes, and rustic architectural timber at Villagio Town Center."
 									}),
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-											src: dining_experience_default,
-											alt: "Convivial table dinner with red wine decanter and sharing plates",
+											src: gmaps_dining_room_default,
+											alt: "Atmospheric dining room with emerald booths and timber beams at Tavolina 44",
 											className: "editorial-img aspect-[3/4] w-full object-cover brightness-95",
 											loading: "lazy"
 										}),
@@ -1213,10 +1280,10 @@ function Index() {
 											className: "absolute bottom-4 left-4 right-4",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "eyebrow-tag text-gold text-[0.58rem]",
-												children: "The Table"
+												children: "The Room"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 												className: "font-serif text-lg text-ivory leading-tight mt-1 font-light",
-												children: "Wine & Conviviality"
+												children: "Dining Atmosphere"
 											})]
 										})
 									]
