@@ -5,7 +5,7 @@ import { a as Phone, c as Eye, d as ChevronRight, f as ChevronLeft, h as ArrowDo
 import { t as Slot } from "../_libs/radix-ui__react-slot.mjs";
 import { n as clsx, t as cva } from "../_libs/class-variance-authority+clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-eNNQoCjy.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-Cb5pB-2i.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function cn(...inputs) {
@@ -75,15 +75,22 @@ var ingredients_default = "/assets/ingredients-Bg-4H3iW.jpg";
 var pizza_default = "/assets/pizza-hF9odjuO.jpg";
 var steak_default = "/assets/steak-BBjTSFBb.jpg";
 var gmaps_dining_room_default = "/assets/gmaps-dining-room-C2P8_bgs.jpg";
-var gmaps_polpette_default = "/assets/gmaps-polpette-BG9ErA1u.jpg";
-var gmaps_calamari_wine_default = "/assets/gmaps-calamari-wine-CqcXOCUT.jpg";
-var gmaps_antipasti_carpaccio_default = "/assets/gmaps-antipasti-carpaccio-Biu6Tn6F.jpg";
-var gmaps_bar_lounge_default = "/assets/gmaps-bar-lounge-Dh-Uu7_z.jpg";
 var gmaps_pizza_artisan_default = "/assets/gmaps-pizza-artisan-CvatvhEA.jpg";
-var gmaps_tiramisu_default = "/assets/gmaps-tiramisu-DUYOMd6H.jpg";
 var gmaps_bar_spirits_default = "/assets/gmaps-bar-spirits-BWystseY.jpg";
-var gmaps_cocktail_coupe_default = "/assets/gmaps-cocktail-coupe-tMUoo3YU.jpg";
-var gmaps_cocktails_bar_default = "/assets/gmaps-cocktails-bar-CU4fBrLM.jpg";
+var gmaps_polpette_default = "/assets/gmaps-polpette-BG9ErA1u.jpg";
+var gmaps_tiramisu_default = "/assets/gmaps-tiramisu-DUYOMd6H.jpg";
+var gmaps_bar_lounge_default = "/assets/gmaps-bar-lounge-Dh-Uu7_z.jpg";
+var gmaps_calamari_wine_default = "/assets/gmaps-calamari-wine-CqcXOCUT.jpg";
+var gallery_artisan_pizza_spread_default = "/assets/gallery-artisan-pizza-spread-CfERnvcn.jpg";
+var gallery_pappardelle_bolognese_default = "/assets/gallery-pappardelle-bolognese-Me5rp5s-.jpg";
+var gallery_braised_osso_buco_default = "/assets/gallery-braised-osso-buco-LD3FpEN6.jpg";
+var gallery_spaghetti_tavolina_default = "/assets/gallery-spaghetti-tavolina-DQhF8keY.jpg";
+var gallery_cocktail_thyme_default = "/assets/gallery-cocktail-thyme-BcSBsNxi.jpg";
+var gallery_window_banquette_default = "/assets/gallery-window-banquette-niyEACEO.jpg";
+var gallery_citrus_beet_salad_default = "/assets/gallery-citrus-beet-salad-LoNfMZoG.jpg";
+var gallery_bar_martini_spritz_default = "/assets/gallery-bar-martini-spritz-CU4fBrLM.jpg";
+var gallery_salumi_antipasti_board_default = "/assets/gallery-salumi-antipasti-board-Biu6Tn6F.jpg";
+var gallery_table_cocktail_coupe_default = "/assets/gallery-table-cocktail-coupe-tMUoo3YU.jpg";
 var DINNER_MENU = [
 	{
 		category: "Cold Appetizers",
@@ -554,7 +561,7 @@ var VERIFIED_REVIEWS = [
 		source: "Google Business Review",
 		rating: 5,
 		highlight: "Atmospheric bar & curated libations",
-		photo: gmaps_cocktails_bar_default
+		photo: gallery_bar_martini_spritz_default
 	}
 ];
 var GALLERY_IMAGES = [
@@ -565,10 +572,58 @@ var GALLERY_IMAGES = [
 		span: "col-span-12 md:col-span-7 aspect-[16/10]"
 	},
 	{
-		src: gmaps_pizza_artisan_default,
-		title: "Wood-Fired Artisanal Pizza",
-		caption: "Hand-stretched blistered crust topped with fresh mozzarella, peppery baby arugula, and house-made pesto drizzle",
+		src: gallery_artisan_pizza_spread_default,
+		title: "Wood-Fired Table Feast",
+		caption: "Hand-stretched blistered pizza, oven-baked feta marinara skillet, toasted country bread, and craft cocktail",
 		span: "col-span-12 md:col-span-5 aspect-[4/3]"
+	},
+	{
+		src: gallery_spaghetti_tavolina_default,
+		title: "Spaghetti Tavolina 44",
+		caption: "House-extruded pasta with tender gulf shrimp, cremini mushrooms, and velvety mascarpone cream sauce",
+		span: "col-span-12 md:col-span-4 aspect-[4/5]"
+	},
+	{
+		src: gallery_braised_osso_buco_default,
+		title: "Slow-Braised Osso Buco",
+		caption: "Tender veal shank with rich bone marrow resting over creamy parmesan polenta with fresh garden rosemary",
+		span: "col-span-12 md:col-span-4 aspect-[4/5]"
+	},
+	{
+		src: gallery_pappardelle_bolognese_default,
+		title: "Pappardelle Bolognese",
+		caption: "Silken wide egg ribbon pasta tossed in slow-simmered rich beef ragù with shaved parmesan and crisp white wine",
+		span: "col-span-12 md:col-span-4 aspect-[4/5]"
+	},
+	{
+		src: gallery_salumi_antipasti_board_default,
+		title: "Artisanal Salumi & Antipasti Board",
+		caption: "Imported Italian prosciutto, artisanal cheeses, house crostini, and ruby citrus beet carpaccio with white wine",
+		span: "col-span-12 md:col-span-6 aspect-[16/10]"
+	},
+	{
+		src: gallery_window_banquette_default,
+		title: "Sunlit Window Banquette",
+		caption: "Intimate green leather booth dining with crystal stemware, amber votives, and views onto Villagio Town Center",
+		span: "col-span-12 md:col-span-6 aspect-[16/10]"
+	},
+	{
+		src: gallery_bar_martini_spritz_default,
+		title: "Espresso Martini & Citrus Spritz",
+		caption: "Handcrafted bar mixology featuring rich espresso martini and fresh mint citrus spritz on the concrete bar top",
+		span: "col-span-12 md:col-span-4 aspect-[4/5]"
+	},
+	{
+		src: gallery_table_cocktail_coupe_default,
+		title: "Signature Shaken Coupé at Table",
+		caption: "Ruby botanical craft cocktail with silky foam, fresh thyme, and amber candlelight in the dining room",
+		span: "col-span-12 md:col-span-4 aspect-[4/5]"
+	},
+	{
+		src: gallery_citrus_beet_salad_default,
+		title: "Roasted Beet & Goat Cheese Carpaccio",
+		caption: "Tender ruby beets with citrus supremes, creamy goat cheese, microgreens, and 25-year balsamic glaze",
+		span: "col-span-12 md:col-span-4 aspect-[4/5]"
 	},
 	{
 		src: gmaps_bar_spirits_default,
@@ -577,21 +632,21 @@ var GALLERY_IMAGES = [
 		span: "col-span-12 md:col-span-6 aspect-[16/10]"
 	},
 	{
-		src: gmaps_antipasti_carpaccio_default,
-		title: "Artisanal Antipasti & Carpaccio",
-		caption: "Roasted beet & citrus carpaccio with goat cheese, microgreens, and a board of imported Italian salumi and cheeses",
+		src: gmaps_bar_lounge_default,
+		title: "The Bar & Peacock Lounge",
+		caption: "Poured-concrete bar top, high-back leather barstools, and Tavolina 44's illuminated crest emblem",
 		span: "col-span-12 md:col-span-6 aspect-[16/10]"
 	},
 	{
-		src: gmaps_polpette_default,
-		title: "Polpette al Forno",
-		caption: "Cast-iron skillet meatballs simmering in rich San Marzano pomodoro, fresh oregano, and grilled country focaccia",
+		src: gmaps_pizza_artisan_default,
+		title: "Wood-Fired Artisanal Pizza",
+		caption: "Hand-stretched blistered crust topped with fresh mozzarella, peppery baby arugula, and house-made pesto drizzle",
 		span: "col-span-12 md:col-span-4 aspect-[4/5]"
 	},
 	{
-		src: gmaps_cocktail_coupe_default,
-		title: "Signature Shaken Coupé",
-		caption: "House botanical craft cocktail with silky foam and fresh garden thyme on a candlelit linen table",
+		src: gallery_cocktail_thyme_default,
+		title: "Velvety Botanical Coupé",
+		caption: "Artisan mixology featuring botanical foam and fresh aromatic garden thyme on a dark wood table",
 		span: "col-span-12 md:col-span-4 aspect-[4/5]"
 	},
 	{
@@ -601,9 +656,9 @@ var GALLERY_IMAGES = [
 		span: "col-span-12 md:col-span-4 aspect-[4/5]"
 	},
 	{
-		src: gmaps_bar_lounge_default,
-		title: "The Bar & Peacock Lounge",
-		caption: "Poured-concrete bar top, high-back leather barstools, and Tavolina 44's illuminated crest emblem",
+		src: gmaps_polpette_default,
+		title: "Polpette al Forno",
+		caption: "Cast-iron skillet meatballs simmering in rich San Marzano pomodoro, fresh oregano, and grilled country focaccia",
 		span: "col-span-12 md:col-span-6 aspect-[16/10]"
 	},
 	{
@@ -1238,14 +1293,14 @@ function Index() {
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "editorial-img-container border border-ivory/10 shadow-2xl cursor-pointer",
 									onClick: () => setLightboxImg({
-										src: gmaps_cocktails_bar_default,
+										src: gallery_cocktail_thyme_default,
 										title: "Handcrafted Bar Cocktails",
-										caption: "Artisan mixology, espresso martinis, and refreshing citrus spritzes on the concrete bar top."
+										caption: "Artisan mixology, botanical coupes, and refreshing citrus spritzes crafted at Tavolina 44."
 									}),
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-											src: gmaps_cocktails_bar_default,
-											alt: "Handcrafted espresso martini and mint citrus spritz at Tavolina 44 bar",
+											src: gallery_cocktail_thyme_default,
+											alt: "Handcrafted botanical coupe cocktail with thyme at Tavolina 44",
 											className: "editorial-img aspect-[3/4] w-full object-cover brightness-95",
 											loading: "lazy"
 										}),
@@ -1710,7 +1765,8 @@ function Index() {
 										src: img.src,
 										alt: img.title,
 										className: "editorial-img h-full w-full object-cover brightness-95",
-										loading: "lazy"
+										loading: "lazy",
+										decoding: "async"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-t from-espresso/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {

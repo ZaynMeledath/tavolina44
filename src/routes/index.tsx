@@ -1,3 +1,5 @@
+import { TavolinaLogo } from "@/components/TavolinaLogo";
+import { Button } from "@/components/ui/button";
 import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowDown,
@@ -8,40 +10,42 @@ import {
   Clock,
   ExternalLink,
   Eye,
-  FileText,
   Heart,
   MapPin,
-  Menu as MenuIcon,
   Phone,
-  Sparkles,
   Star,
   UtensilsCrossed,
   Wine as WineIcon,
-  X,
+  X
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { Button } from "@/components/ui/button";
-import { TavolinaLogo } from "@/components/TavolinaLogo";
 
 // Curated Luxury Photography Assets
-import heroLuxury from "@/assets/hero-luxury.jpg";
 import branzino from "@/assets/branzino.jpg";
 import burrata from "@/assets/burrata.jpg";
+import heroLuxury from "@/assets/hero-luxury.jpg";
 import ingredients from "@/assets/ingredients.jpg";
 import pizza from "@/assets/pizza.jpg";
 import steak from "@/assets/steak.jpg";
 
-// Verified Tavolina 44 Google Maps Photos
-import gmapsDiningRoom from "@/assets/gmaps-dining-room.jpg";
-import gmapsPolpette from "@/assets/gmaps-polpette.jpg";
-import gmapsCalamariWine from "@/assets/gmaps-calamari-wine.jpg";
-import gmapsAntipastiCarpaccio from "@/assets/gmaps-antipasti-carpaccio.jpg";
+// Verified Tavolina 44 Google Maps & Restaurant Photography
+import galleryArtisanPizzaSpread from "@/assets/gallery-artisan-pizza-spread.jpg";
+import galleryBarMartiniSpritz from "@/assets/gallery-bar-martini-spritz.jpg";
+import galleryBraisedOssoBuco from "@/assets/gallery-braised-osso-buco.jpg";
+import galleryCitrusBeetSalad from "@/assets/gallery-citrus-beet-salad.jpg";
+import galleryCocktailThyme from "@/assets/gallery-cocktail-thyme.jpg";
+import galleryPappardelleBolognese from "@/assets/gallery-pappardelle-bolognese.jpg";
+import gallerySalumiAntipastiBoard from "@/assets/gallery-salumi-antipasti-board.jpg";
+import gallerySpaghettiTavolina from "@/assets/gallery-spaghetti-tavolina.jpg";
+import galleryTableCocktailCoupe from "@/assets/gallery-table-cocktail-coupe.jpg";
+import galleryWindowBanquette from "@/assets/gallery-window-banquette.jpg";
 import gmapsBarLounge from "@/assets/gmaps-bar-lounge.jpg";
-import gmapsPizzaArtisan from "@/assets/gmaps-pizza-artisan.jpg";
-import gmapsTiramisu from "@/assets/gmaps-tiramisu.jpg";
 import gmapsBarSpirits from "@/assets/gmaps-bar-spirits.jpg";
-import gmapsCocktailCoupe from "@/assets/gmaps-cocktail-coupe.jpg";
-import gmapsCocktailsBar from "@/assets/gmaps-cocktails-bar.jpg";
+import gmapsCalamariWine from "@/assets/gmaps-calamari-wine.jpg";
+import gmapsDiningRoom from "@/assets/gmaps-dining-room.jpg";
+import gmapsPizzaArtisan from "@/assets/gmaps-pizza-artisan.jpg";
+import gmapsPolpette from "@/assets/gmaps-polpette.jpg";
+import gmapsTiramisu from "@/assets/gmaps-tiramisu.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -569,14 +573,15 @@ const VERIFIED_REVIEWS = [
     source: "Google Business Review",
     rating: 5,
     highlight: "Atmospheric bar & curated libations",
-    photo: gmapsCocktailsBar,
+    photo: galleryBarMartiniSpritz,
   },
 ];
 
 // =============================================================================
-// GALLERY IMAGES (Authentic Tavolina 44 Google Maps Photography)
+// GALLERY IMAGES (Authentic Tavolina 44 Photography & Atmosphere)
 // =============================================================================
 const GALLERY_IMAGES = [
+  // Row 1: Atmospheric Welcome & Wood-Fired Table Feast (7 & 5 cols = 12)
   {
     src: gmapsDiningRoom,
     title: "Dining Room & Ambience",
@@ -585,12 +590,76 @@ const GALLERY_IMAGES = [
     span: "col-span-12 md:col-span-7 aspect-[16/10]",
   },
   {
-    src: gmapsPizzaArtisan,
-    title: "Wood-Fired Artisanal Pizza",
+    src: galleryArtisanPizzaSpread,
+    title: "Wood-Fired Table Feast",
     caption:
-      "Hand-stretched blistered crust topped with fresh mozzarella, peppery baby arugula, and house-made pesto drizzle",
+      "Hand-stretched blistered pizza, oven-baked feta marinara skillet, toasted country bread, and craft cocktail",
     span: "col-span-12 md:col-span-5 aspect-[4/3]",
   },
+
+  // Row 2: Trio of Hand-Crafted Pastas & Secondi (4, 4 & 4 cols = 12)
+  {
+    src: gallerySpaghettiTavolina,
+    title: "Spaghetti Tavolina 44",
+    caption:
+      "House-extruded pasta with tender gulf shrimp, cremini mushrooms, and velvety mascarpone cream sauce",
+    span: "col-span-12 md:col-span-4 aspect-[4/5]",
+  },
+  {
+    src: galleryBraisedOssoBuco,
+    title: "Slow-Braised Osso Buco",
+    caption:
+      "Tender veal shank with rich bone marrow resting over creamy parmesan polenta with fresh garden rosemary",
+    span: "col-span-12 md:col-span-4 aspect-[4/5]",
+  },
+  {
+    src: galleryPappardelleBolognese,
+    title: "Pappardelle Bolognese",
+    caption:
+      "Silken wide egg ribbon pasta tossed in slow-simmered rich beef ragù with shaved parmesan and crisp white wine",
+    span: "col-span-12 md:col-span-4 aspect-[4/5]",
+  },
+
+  // Row 3: Artisanal Salumi Board & Window Banquette (6 & 6 cols = 12)
+  {
+    src: gallerySalumiAntipastiBoard,
+    title: "Artisanal Salumi & Antipasti Board",
+    caption:
+      "Imported Italian prosciutto, artisanal cheeses, house crostini, and ruby citrus beet carpaccio with white wine",
+    span: "col-span-12 md:col-span-6 aspect-[16/10]",
+  },
+  {
+    src: galleryWindowBanquette,
+    title: "Sunlit Window Banquette",
+    caption:
+      "Intimate green leather booth dining with crystal stemware, amber votives, and views onto Villagio Town Center",
+    span: "col-span-12 md:col-span-6 aspect-[16/10]",
+  },
+
+  // Row 4: Cocktails & Cold Antipasti Trio (4, 4 & 4 cols = 12)
+  {
+    src: galleryBarMartiniSpritz,
+    title: "Espresso Martini & Citrus Spritz",
+    caption:
+      "Handcrafted bar mixology featuring rich espresso martini and fresh mint citrus spritz on the concrete bar top",
+    span: "col-span-12 md:col-span-4 aspect-[4/5]",
+  },
+  {
+    src: galleryTableCocktailCoupe,
+    title: "Signature Shaken Coupé at Table",
+    caption:
+      "Ruby botanical craft cocktail with silky foam, fresh thyme, and amber candlelight in the dining room",
+    span: "col-span-12 md:col-span-4 aspect-[4/5]",
+  },
+  {
+    src: galleryCitrusBeetSalad,
+    title: "Roasted Beet & Goat Cheese Carpaccio",
+    caption:
+      "Tender ruby beets with citrus supremes, creamy goat cheese, microgreens, and 25-year balsamic glaze",
+    span: "col-span-12 md:col-span-4 aspect-[4/5]",
+  },
+
+  // Row 5: Spirits Collection & Peacock Lounge (6 & 6 cols = 12)
   {
     src: gmapsBarSpirits,
     title: "Curated Spirits & Amari Collection",
@@ -599,24 +668,26 @@ const GALLERY_IMAGES = [
     span: "col-span-12 md:col-span-6 aspect-[16/10]",
   },
   {
-    src: gmapsAntipastiCarpaccio,
-    title: "Artisanal Antipasti & Carpaccio",
+    src: gmapsBarLounge,
+    title: "The Bar & Peacock Lounge",
     caption:
-      "Roasted beet & citrus carpaccio with goat cheese, microgreens, and a board of imported Italian salumi and cheeses",
+      "Poured-concrete bar top, high-back leather barstools, and Tavolina 44's illuminated crest emblem",
     span: "col-span-12 md:col-span-6 aspect-[16/10]",
   },
+
+  // Row 6: Artisanal Pizza, Thyme Coupe & Tiramisu Trio (4, 4 & 4 cols = 12)
   {
-    src: gmapsPolpette,
-    title: "Polpette al Forno",
+    src: gmapsPizzaArtisan,
+    title: "Wood-Fired Artisanal Pizza",
     caption:
-      "Cast-iron skillet meatballs simmering in rich San Marzano pomodoro, fresh oregano, and grilled country focaccia",
+      "Hand-stretched blistered crust topped with fresh mozzarella, peppery baby arugula, and house-made pesto drizzle",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
   },
   {
-    src: gmapsCocktailCoupe,
-    title: "Signature Shaken Coupé",
+    src: galleryCocktailThyme,
+    title: "Velvety Botanical Coupé",
     caption:
-      "House botanical craft cocktail with silky foam and fresh garden thyme on a candlelit linen table",
+      "Artisan mixology featuring botanical foam and fresh aromatic garden thyme on a dark wood table",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
   },
   {
@@ -626,11 +697,13 @@ const GALLERY_IMAGES = [
       "Espresso-soaked savoiardi and whipped mascarpone cream dusted with dark cocoa and crowned with an edible orchid",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
   },
+
+  // Row 7: Warm Hearty Classics (6 & 6 cols = 12)
   {
-    src: gmapsBarLounge,
-    title: "The Bar & Peacock Lounge",
+    src: gmapsPolpette,
+    title: "Polpette al Forno",
     caption:
-      "Poured-concrete bar top, high-back leather barstools, and Tavolina 44's illuminated crest emblem",
+      "Cast-iron skillet meatballs simmering in rich San Marzano pomodoro, fresh oregano, and grilled country focaccia",
     span: "col-span-12 md:col-span-6 aspect-[16/10]",
   },
   {
@@ -756,11 +829,10 @@ function Index() {
       {/* MINIMAL LUXURY NAVIGATION                                               */}
       {/* ======================================================================= */}
       <header
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-          scrolled
-            ? "nav-blur py-3.5"
-            : "bg-gradient-to-b from-espresso/90 via-espresso/40 to-transparent py-5 lg:py-6"
-        }`}
+        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled
+          ? "nav-blur py-3.5"
+          : "bg-gradient-to-b from-espresso/90 via-espresso/40 to-transparent py-5 lg:py-6"
+          }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-12">
           {/* Brand Logo Using Real tavolina44.png on the Left */}
@@ -806,25 +878,22 @@ function Index() {
             aria-expanded={mobileOpen}
           >
             <span
-              className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${
-                mobileOpen ? "translate-y-[3.5px] rotate-45" : ""
-              }`}
+              className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${mobileOpen ? "translate-y-[3.5px] rotate-45" : ""
+                }`}
             />
             <span
-              className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${
-                mobileOpen ? "-translate-y-[3.5px] -rotate-45" : ""
-              }`}
+              className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${mobileOpen ? "-translate-y-[3.5px] -rotate-45" : ""
+                }`}
             />
           </button>
         </div>
 
         {/* Mobile Fullscreen Drawer with Silky Smooth Open/Close Animation */}
         <div
-          className={`fixed inset-x-0 top-0 z-[-1] flex min-h-screen flex-col justify-between bg-espresso/98 px-8 pb-12 pt-28 backdrop-blur-2xl transition-all duration-500 md:hidden ${
-            mobileOpen
-              ? "pointer-events-auto opacity-100 translate-y-0"
-              : "pointer-events-none opacity-0 -translate-y-4"
-          }`}
+          className={`fixed inset-x-0 top-0 z-[-1] flex min-h-screen flex-col justify-between bg-espresso/98 px-8 pb-12 pt-28 backdrop-blur-2xl transition-all duration-500 md:hidden ${mobileOpen
+            ? "pointer-events-auto opacity-100 translate-y-0"
+            : "pointer-events-none opacity-0 -translate-y-4"
+            }`}
           aria-hidden={!mobileOpen}
         >
           <nav className="flex flex-col space-y-5">
@@ -1093,31 +1162,28 @@ function Index() {
               <div className="mt-8 inline-flex border border-ivory/15 bg-charcoal/60 p-1">
                 <button
                   onClick={() => setActiveDuality("both")}
-                  className={`px-5 py-2 text-[0.68rem] uppercase tracking-[0.22em] transition-all ${
-                    activeDuality === "both"
-                      ? "bg-gold text-espresso font-semibold"
-                      : "text-ivory/60 hover:text-ivory"
-                  }`}
+                  className={`px-5 py-2 text-[0.68rem] uppercase tracking-[0.22em] transition-all ${activeDuality === "both"
+                    ? "bg-gold text-espresso font-semibold"
+                    : "text-ivory/60 hover:text-ivory"
+                    }`}
                 >
                   Convergence
                 </button>
                 <button
                   onClick={() => setActiveDuality("italian")}
-                  className={`px-5 py-2 text-[0.68rem] uppercase tracking-[0.22em] transition-all ${
-                    activeDuality === "italian"
-                      ? "bg-wine text-ivory font-semibold"
-                      : "text-ivory/60 hover:text-ivory"
-                  }`}
+                  className={`px-5 py-2 text-[0.68rem] uppercase tracking-[0.22em] transition-all ${activeDuality === "italian"
+                    ? "bg-wine text-ivory font-semibold"
+                    : "text-ivory/60 hover:text-ivory"
+                    }`}
                 >
                   Italian Soul
                 </button>
                 <button
                   onClick={() => setActiveDuality("american")}
-                  className={`px-5 py-2 text-[0.68rem] uppercase tracking-[0.22em] transition-all ${
-                    activeDuality === "american"
-                      ? "bg-terracotta text-ivory font-semibold"
-                      : "text-ivory/60 hover:text-ivory"
-                  }`}
+                  className={`px-5 py-2 text-[0.68rem] uppercase tracking-[0.22em] transition-all ${activeDuality === "american"
+                    ? "bg-terracotta text-ivory font-semibold"
+                    : "text-ivory/60 hover:text-ivory"
+                    }`}
                 >
                   American Spirit
                 </button>
@@ -1128,11 +1194,10 @@ function Index() {
             <div className="mt-16 grid items-center gap-10 lg:gap-8 xl:gap-12 lg:grid-cols-12 w-full min-w-0">
               {/* Italian Wing */}
               <div
-                className={`transition-all duration-700 min-w-0 w-full lg:col-span-4 ${
-                  activeDuality === "american"
-                    ? "opacity-30 blur-[1px]"
-                    : "opacity-100"
-                }`}
+                className={`transition-all duration-700 min-w-0 w-full lg:col-span-4 ${activeDuality === "american"
+                  ? "opacity-30 blur-[1px]"
+                  : "opacity-100"
+                  }`}
               >
                 <div className="border-t border-gold/30 pt-6 min-w-0 w-full">
                   <span className="font-serif text-[clamp(2.1rem,2.8vw,3.6rem)] xl:text-[clamp(2.5rem,3.4vw,4.4rem)] font-light leading-none tracking-tight text-ivory block break-normal">
@@ -1232,11 +1297,10 @@ function Index() {
 
               {/* American Wing */}
               <div
-                className={`transition-all duration-700 min-w-0 w-full lg:col-span-4 ${
-                  activeDuality === "italian"
-                    ? "opacity-30 blur-[1px]"
-                    : "opacity-100"
-                }`}
+                className={`transition-all duration-700 min-w-0 w-full lg:col-span-4 ${activeDuality === "italian"
+                  ? "opacity-30 blur-[1px]"
+                  : "opacity-100"
+                  }`}
               >
                 <div className="border-t border-terracotta/40 pt-6 text-left lg:text-right min-w-0 w-full">
                   <span className="font-serif text-[clamp(2.1rem,2.8vw,3.6rem)] xl:text-[clamp(2.5rem,3.4vw,4.4rem)] font-light leading-none tracking-tight text-terracotta block break-normal">
@@ -1318,17 +1382,17 @@ function Index() {
                   className="editorial-img-container border border-ivory/10 shadow-2xl cursor-pointer"
                   onClick={() =>
                     setLightboxImg({
-                      src: gmapsCocktailsBar,
+                      src: galleryTableCocktailCoupe,
                       title: "Handcrafted Bar Cocktails",
                       caption:
-                        "Artisan mixology, espresso martinis, and refreshing citrus spritzes on the concrete bar top.",
+                        "Artisan mixology, botanical coupes, and refreshing citrus spritzes crafted at Tavolina 44.",
                     })
                   }
                 >
                   <img
-                    src={gmapsCocktailsBar}
-                    alt="Handcrafted espresso martini and mint citrus spritz at Tavolina 44 bar"
-                    className="editorial-img aspect-[3/4] w-full object-cover brightness-95"
+                    src={galleryTableCocktailCoupe}
+                    alt="Handcrafted botanical coupe cocktail with thyme at Tavolina 44"
+                    className="editorial-img aspect-[3/4] w-full h-full object-cover brightness-95"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-espresso/80 via-transparent to-transparent opacity-80" />
@@ -1622,22 +1686,20 @@ function Index() {
               <div className="mt-8 inline-flex border border-gold/30 bg-charcoal/80 p-1.5 shadow-lg">
                 <button
                   onClick={() => setActiveMenuType("dinner")}
-                  className={`flex items-center gap-2.5 px-6 py-2.5 text-xs uppercase tracking-[0.22em] transition-all duration-300 ${
-                    activeMenuType === "dinner"
-                      ? "bg-gold text-espresso font-semibold"
-                      : "text-ivory/70 hover:text-ivory"
-                  }`}
+                  className={`flex items-center gap-2.5 px-6 py-2.5 text-xs uppercase tracking-[0.22em] transition-all duration-300 ${activeMenuType === "dinner"
+                    ? "bg-gold text-espresso font-semibold"
+                    : "text-ivory/70 hover:text-ivory"
+                    }`}
                 >
                   <UtensilsCrossed size={14} />
                   <span>Dinner Menu</span>
                 </button>
                 <button
                   onClick={() => setActiveMenuType("drinks")}
-                  className={`flex items-center gap-2.5 px-6 py-2.5 text-xs uppercase tracking-[0.22em] transition-all duration-300 ${
-                    activeMenuType === "drinks"
-                      ? "bg-gold text-espresso font-semibold"
-                      : "text-ivory/70 hover:text-ivory"
-                  }`}
+                  className={`flex items-center gap-2.5 px-6 py-2.5 text-xs uppercase tracking-[0.22em] transition-all duration-300 ${activeMenuType === "drinks"
+                    ? "bg-gold text-espresso font-semibold"
+                    : "text-ivory/70 hover:text-ivory"
+                    }`}
                 >
                   <WineIcon size={14} />
                   <span>Drinks &amp; Cellar</span>
@@ -1659,11 +1721,10 @@ function Index() {
                     <button
                       key={cat}
                       onClick={() => setActiveDinnerCategory(cat)}
-                      className={`px-4 py-1.5 text-[0.68rem] uppercase tracking-[0.2em] transition-all duration-200 border ${
-                        activeDinnerCategory === cat
-                          ? "border-gold bg-gold/20 text-gold font-medium"
-                          : "border-ivory/15 bg-charcoal/30 text-ivory/60 hover:border-gold/40 hover:text-ivory"
-                      }`}
+                      className={`px-4 py-1.5 text-[0.68rem] uppercase tracking-[0.2em] transition-all duration-200 border ${activeDinnerCategory === cat
+                        ? "border-gold bg-gold/20 text-gold font-medium"
+                        : "border-ivory/15 bg-charcoal/30 text-ivory/60 hover:border-gold/40 hover:text-ivory"
+                        }`}
                     >
                       {cat}
                     </button>
@@ -1703,101 +1764,101 @@ function Index() {
             <div className="mt-14 space-y-16">
               {activeMenuType === "dinner"
                 ? filteredDinnerMenu.map((group) => (
-                    <div
-                      key={group.category}
-                      className="border border-ivory/10 bg-charcoal/45 p-7 sm:p-11 backdrop-blur-sm shadow-xl reveal-on-scroll"
-                    >
-                      <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-gold/30 pb-5">
-                        <div>
-                          <span className="eyebrow-tag text-gold/90">
-                            {group.tagline}
-                          </span>
-                          <h3 className="mt-1 font-serif text-3xl sm:text-4xl font-light text-ivory">
-                            {group.category}
-                          </h3>
-                        </div>
-                        <span className="mt-2 sm:mt-0 text-[0.65rem] uppercase tracking-[0.25em] text-ivory/50 font-sans">
-                          Tavolina 44 Verified
+                  <div
+                    key={group.category}
+                    className="border border-ivory/10 bg-charcoal/45 p-7 sm:p-11 backdrop-blur-sm shadow-xl reveal-on-scroll"
+                  >
+                    <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-gold/30 pb-5">
+                      <div>
+                        <span className="eyebrow-tag text-gold/90">
+                          {group.tagline}
                         </span>
+                        <h3 className="mt-1 font-serif text-3xl sm:text-4xl font-light text-ivory">
+                          {group.category}
+                        </h3>
                       </div>
-
-                      <div className="mt-8 divide-y divide-ivory/10">
-                        {group.items.map((item) => (
-                          <div
-                            key={item.name}
-                            className="group py-5 first:pt-0 last:pb-0 transition-colors hover:bg-ivory/[0.02]"
-                          >
-                            <div className="flex items-baseline justify-between gap-4">
-                              <div className="flex flex-wrap items-center gap-2.5">
-                                <h4 className="font-serif text-xl sm:text-2xl font-light text-ivory group-hover:text-gold transition-colors">
-                                  {item.name}
-                                </h4>
-                                {item.badge && (
-                                  <span className="border border-gold/30 bg-wine/30 px-2 py-0.5 text-[0.58rem] uppercase tracking-widest text-gold font-medium">
-                                    {item.badge}
-                                  </span>
-                                )}
-                              </div>
-                              <span className="font-sans text-lg font-light text-gold shrink-0 tabular-nums">
-                                {item.price}
-                              </span>
-                            </div>
-                            <p className="mt-1.5 max-w-2xl text-xs sm:text-sm font-light text-bone/75 leading-relaxed">
-                              {item.description}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
+                      <span className="mt-2 sm:mt-0 text-[0.65rem] uppercase tracking-[0.25em] text-ivory/50 font-sans">
+                        Tavolina 44 Verified
+                      </span>
                     </div>
-                  ))
+
+                    <div className="mt-8 divide-y divide-ivory/10">
+                      {group.items.map((item) => (
+                        <div
+                          key={item.name}
+                          className="group py-5 first:pt-0 last:pb-0 transition-colors hover:bg-ivory/[0.02]"
+                        >
+                          <div className="flex items-baseline justify-between gap-4">
+                            <div className="flex flex-wrap items-center gap-2.5">
+                              <h4 className="font-serif text-xl sm:text-2xl font-light text-ivory group-hover:text-gold transition-colors">
+                                {item.name}
+                              </h4>
+                              {item.badge && (
+                                <span className="border border-gold/30 bg-wine/30 px-2 py-0.5 text-[0.58rem] uppercase tracking-widest text-gold font-medium">
+                                  {item.badge}
+                                </span>
+                              )}
+                            </div>
+                            <span className="font-sans text-lg font-light text-gold shrink-0 tabular-nums">
+                              {item.price}
+                            </span>
+                          </div>
+                          <p className="mt-1.5 max-w-2xl text-xs sm:text-sm font-light text-bone/75 leading-relaxed">
+                            {item.description}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))
                 : DRINKS_MENU.map((group) => (
-                    <div
-                      key={group.category}
-                      className="border border-ivory/10 bg-charcoal/45 p-7 sm:p-11 backdrop-blur-sm shadow-xl reveal-on-scroll"
-                    >
-                      <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-gold/30 pb-5">
-                        <div>
-                          <span className="eyebrow-tag text-gold/90">
-                            {group.tagline}
-                          </span>
-                          <h3 className="mt-1 font-serif text-3xl sm:text-4xl font-light text-ivory">
-                            {group.category}
-                          </h3>
-                        </div>
-                        <span className="mt-2 sm:mt-0 text-[0.65rem] uppercase tracking-[0.25em] text-ivory/50 font-sans">
-                          Cellar &amp; Bar
+                  <div
+                    key={group.category}
+                    className="border border-ivory/10 bg-charcoal/45 p-7 sm:p-11 backdrop-blur-sm shadow-xl reveal-on-scroll"
+                  >
+                    <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-gold/30 pb-5">
+                      <div>
+                        <span className="eyebrow-tag text-gold/90">
+                          {group.tagline}
                         </span>
+                        <h3 className="mt-1 font-serif text-3xl sm:text-4xl font-light text-ivory">
+                          {group.category}
+                        </h3>
                       </div>
-
-                      <div className="mt-8 divide-y divide-ivory/10">
-                        {group.items.map((item) => (
-                          <div
-                            key={item.name}
-                            className="group py-5 first:pt-0 last:pb-0 transition-colors hover:bg-ivory/[0.02]"
-                          >
-                            <div className="flex items-baseline justify-between gap-4">
-                              <div className="flex flex-wrap items-center gap-2.5">
-                                <h4 className="font-serif text-xl sm:text-2xl font-light text-ivory group-hover:text-gold transition-colors">
-                                  {item.name}
-                                </h4>
-                                {item.badge && (
-                                  <span className="border border-gold/30 bg-wine/30 px-2 py-0.5 text-[0.58rem] uppercase tracking-widest text-gold font-medium">
-                                    {item.badge}
-                                  </span>
-                                )}
-                              </div>
-                              <span className="font-sans text-lg font-light text-gold shrink-0 tabular-nums">
-                                {item.price}
-                              </span>
-                            </div>
-                            <p className="mt-1.5 max-w-2xl text-xs sm:text-sm font-light text-bone/75 leading-relaxed">
-                              {item.description}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
+                      <span className="mt-2 sm:mt-0 text-[0.65rem] uppercase tracking-[0.25em] text-ivory/50 font-sans">
+                        Cellar &amp; Bar
+                      </span>
                     </div>
-                  ))}
+
+                    <div className="mt-8 divide-y divide-ivory/10">
+                      {group.items.map((item) => (
+                        <div
+                          key={item.name}
+                          className="group py-5 first:pt-0 last:pb-0 transition-colors hover:bg-ivory/[0.02]"
+                        >
+                          <div className="flex items-baseline justify-between gap-4">
+                            <div className="flex flex-wrap items-center gap-2.5">
+                              <h4 className="font-serif text-xl sm:text-2xl font-light text-ivory group-hover:text-gold transition-colors">
+                                {item.name}
+                              </h4>
+                              {item.badge && (
+                                <span className="border border-gold/30 bg-wine/30 px-2 py-0.5 text-[0.58rem] uppercase tracking-widest text-gold font-medium">
+                                  {item.badge}
+                                </span>
+                              )}
+                            </div>
+                            <span className="font-sans text-lg font-light text-gold shrink-0 tabular-nums">
+                              {item.price}
+                            </span>
+                          </div>
+                          <p className="mt-1.5 max-w-2xl text-xs sm:text-sm font-light text-bone/75 leading-relaxed">
+                            {item.description}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
             </div>
 
             {/* Official Disclaimers from Menu Cards */}
@@ -1848,6 +1909,7 @@ function Index() {
                     alt={img.title}
                     className="editorial-img h-full w-full object-cover brightness-95"
                     loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-espresso/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="absolute bottom-6 left-6 right-6 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">

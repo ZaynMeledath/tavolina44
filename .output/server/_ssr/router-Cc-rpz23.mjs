@@ -1,7 +1,7 @@
 import { c as HeadContent, d as Outlet, f as lazyRouteComponent, g as useRouter, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { n as require_jsx_runtime, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-BqkcMswV.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-Cc-rpz23.js
 var import_jsx_runtime = require_jsx_runtime();
 var styles_default = "/assets/styles-BfvbuLgc.css";
 function NotFoundComponent() {
@@ -146,7 +146,7 @@ function RootComponent() {
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {})
 	});
 }
-var $$splitComponentImporter = () => import("./routes-eNNQoCjy.mjs");
+var $$splitComponentImporter = () => import("./routes-Cb5pB-2i.mjs");
 var rootRouteChildren = { IndexRoute: createFileRoute("/")({
 	head: () => ({ meta: [{ title: "Tavolina 44 | Luxury Italian-American Dining · Katy, Texas" }, {
 		name: "description",
