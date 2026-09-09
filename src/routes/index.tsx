@@ -1101,14 +1101,12 @@ function Index() {
                 </div>
 
                 {/* Floating Accent Badge */}
-                <div className="absolute -bottom-6 -left-6 hidden border border-gold/30 bg-espresso/95 p-5 shadow-2xl backdrop-blur-md sm:block">
-                  <span className="block font-serif text-2xl text-gold font-light">
-                    44
-                  </span>
+                {/* <div className="absolute -bottom-6 -left-6 hidden border border-gold/30 bg-espresso/95 p-5 shadow-2xl backdrop-blur-md sm:block">
+
                   <span className="block text-[0.6rem] uppercase tracking-widest text-ivory/70">
-                    A Table for Everyone
+                    TAVOLINA 44
                   </span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
