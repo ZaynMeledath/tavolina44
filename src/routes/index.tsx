@@ -11,6 +11,7 @@ import {
   ExternalLink,
   Eye,
   Heart,
+  Instagram,
   MapPin,
   Phone,
   Star,
@@ -19,6 +20,10 @@ import {
   X,
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+
+// Official Tavolina 44 Social Channels
+const INSTAGRAM_URL = "https://www.instagram.com/tavolina.44/";
+const INSTAGRAM_HANDLE = "@tavolina.44";
 
 // Curated Luxury Photography Assets
 import branzino from "@/assets/branzino.jpg";
@@ -852,43 +857,77 @@ function Index() {
             />
           </a>
 
-          {/* Desktop Nav Links (Minimal, uncluttered, refined spacing) */}
-          <nav
-            className="hidden items-center gap-8 md:flex lg:gap-10 xl:gap-12"
-            aria-label="Main Navigation"
-          >
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="group relative py-1 text-[0.72rem] font-medium uppercase tracking-[0.22em] text-ivory/70 transition-colors duration-300 hover:text-ivory"
-              >
-                {item.label}
-                <span className="absolute -bottom-0.5 left-0 h-[1px] w-0 bg-gold transition-all duration-300 ease-out group-hover:w-full" />
-              </button>
-            ))}
-          </nav>
+          {/* Desktop Nav Links & Subtle Instagram CTA */}
+          <div className="hidden items-center gap-6 md:flex lg:gap-8 xl:gap-10">
+            <nav
+              className="flex items-center gap-7 lg:gap-9 xl:gap-11"
+              aria-label="Main Navigation"
+            >
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className="group relative py-1 text-[0.72rem] font-medium uppercase tracking-[0.22em] text-ivory/70 transition-colors duration-300 hover:text-ivory"
+                >
+                  {item.label}
+                  <span className="absolute -bottom-0.5 left-0 h-[1px] w-0 bg-gold transition-all duration-300 ease-out group-hover:w-full" />
+                </button>
+              ))}
+            </nav>
 
-          {/* Mobile Clean Hamburger Button with smooth 2-line morph to 'X' */}
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="relative flex h-11 w-11 flex-col items-center justify-center gap-1.5 text-ivory md:hidden focus:outline-none hover:text-gold transition-colors"
-            aria-label={
-              mobileOpen ? "Close navigation menu" : "Open navigation menu"
-            }
-            aria-expanded={mobileOpen}
-          >
-            <span
-              className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${
-                mobileOpen ? "translate-y-[3.5px] rotate-45" : ""
-              }`}
-            />
-            <span
-              className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${
-                mobileOpen ? "-translate-y-[3.5px] -rotate-45" : ""
-              }`}
-            />
-          </button>
+            {/* Subtle, refined Instagram CTA in Navbar */}
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Follow Tavolina 44 on Instagram ${INSTAGRAM_HANDLE}`}
+              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full border border-gold/30 bg-espresso/60 px-3.5 py-1.5 backdrop-blur-md transition-all duration-300 hover:border-gold hover:bg-gold/10 hover:shadow-[0_0_20px_rgba(203,167,118,0.22)] focus:outline-none focus:ring-1 focus:ring-gold/60"
+            >
+              <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-gold/20 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold/60 opacity-75 duration-1000" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-gold" />
+              </span>
+              <Instagram className="h-3.5 w-3.5 text-gold transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
+              <span className="text-[0.66rem] font-medium tracking-[0.18em] uppercase text-ivory/85 transition-colors group-hover:text-gold">
+                {INSTAGRAM_HANDLE}
+              </span>
+              <ArrowUpRight className="h-3 w-3 text-gold/60 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-gold" />
+            </a>
+          </div>
+
+          {/* Mobile Right Controls: Instagram Icon + Smooth Hamburger */}
+          <div className="flex items-center gap-2.5 md:hidden">
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Follow Tavolina 44 on Instagram ${INSTAGRAM_HANDLE}`}
+              className="group relative flex h-10 w-10 items-center justify-center rounded-full border border-gold/30 bg-espresso/60 text-gold backdrop-blur-md transition-all duration-300 hover:border-gold hover:bg-gold/15 active:scale-95 focus:outline-none"
+            >
+              <Instagram className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
+            </a>
+
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="relative flex h-11 w-11 flex-col items-center justify-center gap-1.5 text-ivory focus:outline-none hover:text-gold transition-colors"
+              aria-label={
+                mobileOpen ? "Close navigation menu" : "Open navigation menu"
+              }
+              aria-expanded={mobileOpen}
+            >
+              <span
+                className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${
+                  mobileOpen ? "translate-y-[3.5px] rotate-45" : ""
+                }`}
+              />
+              <span
+                className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${
+                  mobileOpen ? "-translate-y-[3.5px] -rotate-45" : ""
+                }`}
+              />
+            </button>
+          </div>
         </div>
 
         {/* Mobile Fullscreen Drawer with Silky Smooth Open/Close Animation */}
@@ -917,12 +956,37 @@ function Index() {
             ))}
           </nav>
 
-          <div className="border-t border-ivory/10 pt-8 text-xs text-bone/60 space-y-2">
-            <p className="font-sans tracking-[0.24em] uppercase text-gold font-medium">
-              Villagio Town Center · Suite 180
-            </p>
-            <p>22756 Westheimer Parkway · Katy, TX 77450</p>
-            <p className="text-ivory/80">(346) 387-6092</p>
+          <div className="space-y-6 pt-6">
+            {/* Mobile Drawer Instagram Link */}
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-between rounded-sm border border-gold/25 bg-charcoal/80 p-3.5 text-ivory transition-all duration-300 hover:border-gold hover:bg-gold/10"
+            >
+              <div className="flex items-center gap-3">
+                <div className="flex h-9 w-9 items-center justify-center rounded-full border border-gold/40 bg-espresso text-gold transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                  <Instagram className="h-4 w-4" />
+                </div>
+                <div>
+                  <p className="text-[0.65rem] font-medium uppercase tracking-[0.2em] text-gold">
+                    Follow Our Journey
+                  </p>
+                  <p className="font-serif text-base text-ivory">
+                    {INSTAGRAM_HANDLE}
+                  </p>
+                </div>
+              </div>
+              <ArrowUpRight className="h-4 w-4 text-gold/70 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-gold" />
+            </a>
+
+            <div className="border-t border-ivory/10 pt-6 text-xs text-bone/60 space-y-2">
+              <p className="font-sans tracking-[0.24em] uppercase text-gold font-medium">
+                Villagio Town Center · Suite 180
+              </p>
+              <p>22756 Westheimer Parkway · Katy, TX 77450</p>
+              <p className="text-ivory/80">(346) 387-6092</p>
+            </div>
           </div>
         </div>
       </header>
@@ -1015,8 +1079,23 @@ function Index() {
             </div>
 
             {/* Bottom Hero Divider & Continuity */}
-            <div className="mt-14 flex items-center justify-between border-t border-ivory/10 pt-5 text-[0.65rem] uppercase tracking-[0.24em] text-ivory/45">
+            <div className="mt-14 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between border-t border-ivory/10 pt-5 text-[0.65rem] uppercase tracking-[0.24em] text-ivory/45">
               <span>Scroll to Begin Experience</span>
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 text-ivory/65 transition-colors duration-300 hover:text-gold"
+              >
+                <Instagram className="h-3.5 w-3.5 text-gold/80 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
+                <span className="tracking-[0.22em] transition-colors group-hover:text-gold">
+                  {INSTAGRAM_HANDLE}
+                </span>
+                <span className="text-[0.58rem] normal-case text-gold/60">
+                  · stories &amp; craft
+                </span>
+                <ArrowUpRight className="h-3 w-3 opacity-50 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100 group-hover:text-gold" />
+              </a>
               <span>EST. 2026 · KATY, TEXAS</span>
             </div>
           </div>
@@ -1901,9 +1980,21 @@ function Index() {
                   At the <em className="italic text-gold font-normal">Table</em>
                 </h2>
               </div>
-              <span className="mt-4 text-xs uppercase tracking-[0.24em] text-ivory/50 md:mt-0 font-sans">
-                Click any photograph to view high-resolution detail
-              </span>
+              <div className="mt-4 flex flex-wrap items-center gap-4 md:mt-0">
+                <span className="text-xs uppercase tracking-[0.24em] text-ivory/50 font-sans">
+                  Click any photograph to view high-resolution detail
+                </span>
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-2 rounded-full border border-gold/30 bg-espresso/60 px-3.5 py-1.5 text-[0.68rem] uppercase tracking-[0.2em] text-gold transition-all duration-300 hover:border-gold hover:bg-gold/15 hover:shadow-[0_0_20px_rgba(203,167,118,0.2)]"
+                >
+                  <Instagram className="h-3.5 w-3.5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
+                  <span>More on Instagram</span>
+                  <ArrowUpRight className="h-3 w-3 opacity-60 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
+                </a>
+              </div>
             </div>
 
             {/* Asymmetric Masonry Layout */}
@@ -2073,6 +2164,47 @@ function Index() {
                 <div className="mt-7 text-xs uppercase tracking-[0.24em] text-gold/80 font-medium">
                   Villagio Town Center · Suite 180
                 </div>
+
+                {/* Prominent Luxury Instagram Card */}
+                <div className="mt-8 pt-6 border-t border-ivory/10">
+                  <p className="eyebrow-tag text-gold text-[0.62rem] mb-3">
+                    Connect With Us
+                  </p>
+                  <a
+                    href={INSTAGRAM_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Follow Tavolina 44 on Instagram ${INSTAGRAM_HANDLE}`}
+                    className="group relative flex items-center justify-between overflow-hidden rounded-sm border border-gold/30 bg-espresso/70 p-4 transition-all duration-500 hover:border-gold hover:bg-gold/10 hover:shadow-[0_0_30px_rgba(203,167,118,0.2)] focus:outline-none focus:ring-1 focus:ring-gold/60"
+                  >
+                    {/* Shimmer sweep */}
+                    <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-gold/15 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
+
+                    <div className="relative z-10 flex items-center gap-3.5">
+                      <div className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/40 bg-ink text-gold shadow-inner transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:border-gold">
+                        <Instagram className="h-5 w-5" />
+                      </div>
+                      <div>
+                        <div className="flex items-center gap-2">
+                          <span className="font-serif text-lg font-light tracking-wide text-ivory transition-colors duration-300 group-hover:text-gold">
+                            {INSTAGRAM_HANDLE}
+                          </span>
+                          <span className="relative flex h-2 w-2">
+                            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold/60 opacity-75 duration-1000" />
+                            <span className="relative inline-flex h-2 w-2 rounded-full bg-gold" />
+                          </span>
+                        </div>
+                        <p className="text-[0.7rem] uppercase tracking-[0.18em] text-bone/60">
+                          Daily Craft · Behind The Hearth
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full border border-ivory/15 text-ivory/60 transition-all duration-300 group-hover:border-gold group-hover:bg-gold group-hover:text-espresso">
+                      <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </div>
+                  </a>
+                </div>
               </div>
 
               {/* Navigation Links */}
@@ -2111,6 +2243,25 @@ function Index() {
                     <p>Sun–Thu: 5–10 PM</p>
                     <p>Fri &amp; Sat: 5–11 PM</p>
                   </div>
+
+                  {/* Direct Social Link */}
+                  <div className="pt-4 border-t border-ivory/10">
+                    <p className="text-[0.65rem] uppercase tracking-[0.24em] text-gold/80 font-medium mb-2">
+                      Social &amp; Visuals
+                    </p>
+                    <a
+                      href={INSTAGRAM_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group inline-flex items-center gap-2 text-sm text-bone/90 transition-colors hover:text-gold"
+                    >
+                      <Instagram className="h-4 w-4 text-gold transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
+                      <span className="underline-offset-4 group-hover:underline">
+                        Instagram {INSTAGRAM_HANDLE}
+                      </span>
+                      <ArrowUpRight className="h-3.5 w-3.5 text-gold/60 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-gold" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2125,6 +2276,15 @@ function Index() {
             {/* Bottom Copyright & Verification */}
             <div className="flex flex-col sm:flex-row items-center justify-between border-t border-ivory/10 pt-8 text-[0.68rem] uppercase tracking-[0.22em] text-ivory/40">
               <p>© 2026 Tavolina 44. All rights reserved.</p>
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 sm:mt-0 inline-flex items-center gap-2 text-gold/80 transition-colors duration-300 hover:text-gold hover:underline underline-offset-4"
+              >
+                <Instagram className="h-3 w-3 text-gold" />
+                <span>Follow {INSTAGRAM_HANDLE}</span>
+              </a>
               <p className="mt-3 sm:mt-0">
                 Villagio Town Center · Katy, Texas · Italian &amp; American
                 Dining
