@@ -1,5 +1,4 @@
-@import "tailwindcss" source(none);
-@source "../src";
+@import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -95,8 +94,6 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     overflow-x: hidden;
-    selection-background-color: var(--color-gold);
-    selection-color: var(--color-espresso);
   }
 
   ::selection {
@@ -106,6 +103,7 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
     color-scheme: dark;
   }
 }
@@ -310,13 +308,34 @@
 }
 
 /* Stagger Delays */
-.delay-100 { transition-delay: 100ms; animation-delay: 100ms; }
-.delay-200 { transition-delay: 200ms; animation-delay: 200ms; }
-.delay-300 { transition-delay: 300ms; animation-delay: 300ms; }
-.delay-400 { transition-delay: 400ms; animation-delay: 400ms; }
-.delay-500 { transition-delay: 500ms; animation-delay: 500ms; }
-.delay-600 { transition-delay: 600ms; animation-delay: 600ms; }
-.delay-700 { transition-delay: 700ms; animation-delay: 700ms; }
+.delay-100 {
+  transition-delay: 100ms;
+  animation-delay: 100ms;
+}
+.delay-200 {
+  transition-delay: 200ms;
+  animation-delay: 200ms;
+}
+.delay-300 {
+  transition-delay: 300ms;
+  animation-delay: 300ms;
+}
+.delay-400 {
+  transition-delay: 400ms;
+  animation-delay: 400ms;
+}
+.delay-500 {
+  transition-delay: 500ms;
+  animation-delay: 500ms;
+}
+.delay-600 {
+  transition-delay: 600ms;
+  animation-delay: 600ms;
+}
+.delay-700 {
+  transition-delay: 700ms;
+  animation-delay: 700ms;
+}
 
 /* 3D Sculptural "44" Artifact */
 .sculpture-wrapper {
@@ -343,6 +362,7 @@
     #5f431d 90%,
     #38240f 100%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.95))
@@ -353,7 +373,8 @@
 
 /* Subtle idle float and romantic shimmer for the 3D sculpture */
 @keyframes sculpturePulseGlow {
-  0%, 100% {
+  0%,
+  100% {
     filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.95))
       drop-shadow(0 0 20px rgba(203, 167, 118, 0.25));
   }
@@ -366,7 +387,6 @@
 .sculpture-glow {
   animation: sculpturePulseGlow 5s ease-in-out infinite;
 }
-
 
 /* Luxury Line Dividers */
 .hairline-gold {

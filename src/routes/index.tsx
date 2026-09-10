@@ -55,11 +55,11 @@ import gmapsTiramisu from "@/assets/gmaps-tiramisu.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Tavolina 44 | Luxury Italian-American Dining · Katy, Texas" },
+      { title: "Tavolina 44 | Italian-American Restaurant in Katy, TX" },
       {
         name: "description",
         content:
-          "Experience Tavolina 44: an upscale Italian-American restaurant at Villagio Town Center in Katy, Texas. Italian soul and American spirit crafted with wood-fired passion and modern hospitality.",
+          "Tavolina 44 unites Italian soul and American spirit at Villagio Town Center in Katy, Texas. Upscale dining featuring hand-rolled pastas, oak-charred steaks, and craft cocktails.",
       },
     ],
   }),
@@ -590,6 +590,7 @@ const GALLERY_IMAGES = [
   {
     src: gmapsDiningRoom,
     title: "Dining Room & Ambience",
+    alt: "Emerald leather banquettes, exposed brick, and warm rustic timber framing at Tavolina 44 dining room in Katy, Texas",
     caption:
       "Emerald leather banquettes, exposed brick, and warm rustic timber framing at Villagio Town Center",
     span: "col-span-12 md:col-span-7 aspect-[16/10]",
@@ -597,6 +598,7 @@ const GALLERY_IMAGES = [
   {
     src: galleryArtisanPizzaSpread,
     title: "Wood-Fired Table Feast",
+    alt: "Hand-stretched blistered artisan pizza, oven-baked feta marinara skillet, and cocktail at Tavolina 44 table",
     caption:
       "Hand-stretched blistered pizza, oven-baked feta marinara skillet, toasted country bread, and craft cocktail",
     span: "col-span-12 md:col-span-5 aspect-[4/3]",
@@ -606,6 +608,7 @@ const GALLERY_IMAGES = [
   {
     src: gallerySpaghettiTavolina,
     title: "Spaghetti Tavolina 44",
+    alt: "House-extruded spaghetti pasta with tender gulf shrimp and cremini mushrooms in mascarpone cream sauce",
     caption:
       "House-extruded pasta with tender gulf shrimp, cremini mushrooms, and velvety mascarpone cream sauce",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
@@ -613,6 +616,7 @@ const GALLERY_IMAGES = [
   {
     src: galleryBraisedOssoBuco,
     title: "Slow-Braised Osso Buco",
+    alt: "Tender slow-braised veal osso buco shank with marrow over creamy parmesan polenta and garden rosemary",
     caption:
       "Tender veal shank with rich bone marrow resting over creamy parmesan polenta with fresh garden rosemary",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
@@ -620,6 +624,7 @@ const GALLERY_IMAGES = [
   {
     src: galleryPappardelleBolognese,
     title: "Pappardelle Bolognese",
+    alt: "Fresh egg pappardelle ribbon pasta tossed in slow-simmered beef ragù with shaved parmesan at Tavolina 44",
     caption:
       "Silken wide egg ribbon pasta tossed in slow-simmered rich beef ragù with shaved parmesan and crisp white wine",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
@@ -629,6 +634,7 @@ const GALLERY_IMAGES = [
   {
     src: gallerySalumiAntipastiBoard,
     title: "Artisanal Salumi & Antipasti Board",
+    alt: "Artisanal antipasti board with imported Italian prosciutto, cheeses, house crostini, and citrus beet carpaccio",
     caption:
       "Imported Italian prosciutto, artisanal cheeses, house crostini, and ruby citrus beet carpaccio with white wine",
     span: "col-span-12 md:col-span-6 aspect-[16/10]",
@@ -636,6 +642,7 @@ const GALLERY_IMAGES = [
   {
     src: galleryWindowBanquette,
     title: "Sunlit Window Banquette",
+    alt: "Intimate emerald green leather booth dining with crystal stemware overlooking Villagio Town Center",
     caption:
       "Intimate green leather booth dining with crystal stemware, amber votives, and views onto Villagio Town Center",
     span: "col-span-12 md:col-span-6 aspect-[16/10]",
@@ -645,6 +652,7 @@ const GALLERY_IMAGES = [
   {
     src: galleryBarMartiniSpritz,
     title: "Espresso Martini & Citrus Spritz",
+    alt: "Espresso martini with coffee bean garnish and mint citrus spritz cocktail served at Tavolina 44 bar",
     caption:
       "Handcrafted bar mixology featuring rich espresso martini and fresh mint citrus spritz on the concrete bar top",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
@@ -652,6 +660,7 @@ const GALLERY_IMAGES = [
   {
     src: galleryTableCocktailCoupe,
     title: "Signature Shaken Coupé at Table",
+    alt: "Ruby botanical craft cocktail in coupe glass with silky foam and fresh thyme in dining room candlelight",
     caption:
       "Ruby botanical craft cocktail with silky foam, fresh thyme, and amber candlelight in the dining room",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
@@ -659,6 +668,7 @@ const GALLERY_IMAGES = [
   {
     src: galleryCitrusBeetSalad,
     title: "Roasted Beet & Goat Cheese Carpaccio",
+    alt: "Roasted ruby beet carpaccio with creamy goat cheese, orange citrus supremes, and aged balsamic glaze",
     caption:
       "Tender ruby beets with citrus supremes, creamy goat cheese, microgreens, and 25-year balsamic glaze",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
@@ -668,6 +678,7 @@ const GALLERY_IMAGES = [
   {
     src: gmapsBarSpirits,
     title: "Curated Spirits & Amari Collection",
+    alt: "Illuminated open brick back-bar featuring Italian amari, aperitivi, and small-batch whiskies at Tavolina 44",
     caption:
       "Illuminated open brick back-bar featuring Italian amari, aperitivi, and premium small-batch whiskies",
     span: "col-span-12 md:col-span-6 aspect-[16/10]",
@@ -675,6 +686,7 @@ const GALLERY_IMAGES = [
   {
     src: gmapsBarLounge,
     title: "The Bar & Peacock Lounge",
+    alt: "Poured-concrete bar counter, high-back leather barstools, and illuminated crest emblem at Tavolina 44",
     caption:
       "Poured-concrete bar top, high-back leather barstools, and Tavolina 44's illuminated crest emblem",
     span: "col-span-12 md:col-span-6 aspect-[16/10]",
@@ -684,6 +696,7 @@ const GALLERY_IMAGES = [
   {
     src: gmapsPizzaArtisan,
     title: "Wood-Fired Artisanal Pizza",
+    alt: "Artisan wood-fired pizza with blistered crust, fresh mozzarella, baby arugula, and basil pesto drizzle",
     caption:
       "Hand-stretched blistered crust topped with fresh mozzarella, peppery baby arugula, and house-made pesto drizzle",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
@@ -691,6 +704,7 @@ const GALLERY_IMAGES = [
   {
     src: galleryCocktailThyme,
     title: "Velvety Botanical Coupé",
+    alt: "Velvety botanical cocktail with egg white foam and fresh garden thyme sprig on dark wood table",
     caption:
       "Artisan mixology featuring botanical foam and fresh aromatic garden thyme on a dark wood table",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
@@ -698,6 +712,7 @@ const GALLERY_IMAGES = [
   {
     src: gmapsTiramisu,
     title: "Classic House Tiramisu",
+    alt: "House-made classic tiramisu with espresso savoiardi, mascarpone cream, and cocoa powder crowned with edible flower",
     caption:
       "Espresso-soaked savoiardi and whipped mascarpone cream dusted with dark cocoa and crowned with an edible orchid",
     span: "col-span-12 md:col-span-4 aspect-[4/5]",
@@ -707,6 +722,7 @@ const GALLERY_IMAGES = [
   {
     src: gmapsPolpette,
     title: "Polpette al Forno",
+    alt: "Cast-iron skillet meatballs simmering in San Marzano pomodoro sauce with fresh oregano and focaccia",
     caption:
       "Cast-iron skillet meatballs simmering in rich San Marzano pomodoro, fresh oregano, and grilled country focaccia",
     span: "col-span-12 md:col-span-6 aspect-[16/10]",
@@ -714,6 +730,7 @@ const GALLERY_IMAGES = [
   {
     src: gmapsCalamariWine,
     title: "Calamari Fritti & Tuscan Wine",
+    alt: "Golden crispy calamari fritti with marinara and lemon, served with glass of red Tuscan wine at table",
     caption:
       "Golden crispy calamari with lemon and house marinara, paired with Morellino di Scansano at the booth",
     span: "col-span-12 md:col-span-6 aspect-[16/10]",
@@ -796,16 +813,42 @@ function Index() {
     };
   }, [activeMenuType, activeDinnerCategory]);
 
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.location.hash) {
+      const targetId = window.location.hash.replace("#", "");
+      const element = document.getElementById(targetId);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 150);
+      }
+    }
+
+    const handleHashChange = () => {
+      const targetId = window.location.hash.replace("#", "");
+      if (targetId) {
+        const el = document.getElementById(targetId);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      if (typeof window !== "undefined") {
+        window.history.pushState(null, "", `#${id}`);
+      }
     }
     setMobileOpen(false);
   };
 
   const navItems = [
-    { label: "Our Story", id: "our-story" },
+    { label: "Our Story", id: "story" },
     { label: "Menu", id: "menu" },
     { label: "Gallery", id: "gallery" },
     { label: "Location", id: "location" },
@@ -834,11 +877,10 @@ function Index() {
       {/* MINIMAL LUXURY NAVIGATION                                               */}
       {/* ======================================================================= */}
       <header
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-          scrolled
-            ? "nav-blur py-3.5"
-            : "bg-gradient-to-b from-espresso/90 via-espresso/40 to-transparent py-5 lg:py-6"
-        }`}
+        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled
+          ? "nav-blur py-3.5"
+          : "bg-gradient-to-b from-espresso/90 via-espresso/40 to-transparent py-5 lg:py-6"
+          }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-12">
           {/* Brand Logo Using Real tavolina44.png on the Left */}
@@ -849,6 +891,7 @@ function Index() {
               scrollToSection("home");
             }}
             className="group inline-flex items-center focus:outline-none"
+            aria-label="Tavolina 44 Homepage"
           >
             <TavolinaLogo
               size="sm"
@@ -864,14 +907,18 @@ function Index() {
               aria-label="Main Navigation"
             >
               {navItems.map((item) => (
-                <button
+                <a
                   key={item.id}
-                  onClick={() => scrollToSection(item.id)}
+                  href={`#${item.id}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(item.id);
+                  }}
                   className="group relative py-1 text-[0.72rem] font-medium uppercase tracking-[0.22em] text-ivory/70 transition-colors duration-300 hover:text-ivory"
                 >
                   {item.label}
                   <span className="absolute -bottom-0.5 left-0 h-[1px] w-0 bg-gold transition-all duration-300 ease-out group-hover:w-full" />
-                </button>
+                </a>
               ))}
             </nav>
 
@@ -917,14 +964,12 @@ function Index() {
               aria-expanded={mobileOpen}
             >
               <span
-                className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${
-                  mobileOpen ? "translate-y-[3.5px] rotate-45" : ""
-                }`}
+                className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${mobileOpen ? "translate-y-[3.5px] rotate-45" : ""
+                  }`}
               />
               <span
-                className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${
-                  mobileOpen ? "-translate-y-[3.5px] -rotate-45" : ""
-                }`}
+                className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${mobileOpen ? "-translate-y-[3.5px] -rotate-45" : ""
+                  }`}
               />
             </button>
           </div>
@@ -932,18 +977,24 @@ function Index() {
 
         {/* Mobile Fullscreen Drawer with Silky Smooth Open/Close Animation */}
         <div
-          className={`fixed inset-x-0 top-0 z-[-1] flex min-h-screen flex-col justify-between bg-espresso/98 px-8 pb-12 pt-28 backdrop-blur-2xl transition-all duration-500 md:hidden ${
-            mobileOpen
-              ? "pointer-events-auto opacity-100 translate-y-0"
-              : "pointer-events-none opacity-0 -translate-y-4"
-          }`}
+          className={`fixed inset-x-0 top-0 z-[-1] flex min-h-screen flex-col justify-between bg-espresso/98 px-8 pb-12 pt-28 backdrop-blur-2xl transition-all duration-500 md:hidden ${mobileOpen
+            ? "pointer-events-auto opacity-100 translate-y-0"
+            : "pointer-events-none opacity-0 -translate-y-4"
+            }`}
           aria-hidden={!mobileOpen}
         >
-          <nav className="flex flex-col space-y-5">
+          <nav
+            className="flex flex-col space-y-5"
+            aria-label="Mobile Navigation"
+          >
             {navItems.map((item, idx) => (
-              <button
+              <a
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                href={`#${item.id}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(item.id);
+                }}
                 className="group flex items-baseline justify-between border-b border-ivory/10 pb-3 text-left font-serif text-3xl font-light text-ivory transition-colors hover:text-gold"
               >
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
@@ -952,7 +1003,7 @@ function Index() {
                 <span className="font-sans text-xs tracking-widest text-gold/50">
                   0{idx + 1}
                 </span>
-              </button>
+              </a>
             ))}
           </nav>
 
@@ -1003,8 +1054,11 @@ function Index() {
           <div className="absolute inset-0 z-0 overflow-hidden">
             <img
               src={heroLuxury}
-              alt="Artisan handmade pasta ribbons tossed in rich sauce in dark restaurant lighting"
+              alt="Artisan handmade pasta ribbons tossed in rich sauce in dark restaurant lighting at Tavolina 44 in Katy, Texas"
               className="h-full w-full object-cover object-center brightness-[0.70] contrast-[1.08] anim-hero-bg anim-hero-drift"
+              loading="eager"
+              decoding="sync"
+              fetchPriority="high"
             />
             {/* Deep Moody Vignette Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/55 to-espresso/35" />
@@ -1024,8 +1078,16 @@ function Index() {
 
                 {/* Grand Editorial Headline with Staggered Entrance */}
                 <h1 className="mt-5 font-serif text-[clamp(3.5rem,8.5vw,7.8rem)] font-light leading-[0.9] tracking-tight text-ivory">
-                  <span className="block anim-hero-h1-1">Italian Soul.</span>
-                  <span className="block anim-hero-h1-2 mt-1">
+                  <span className="sr-only">
+                    Tavolina 44 — Italian &amp; American Dining in Katy, Texas
+                  </span>
+                  <span aria-hidden="true" className="block anim-hero-h1-1">
+                    Italian Soul.
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="block anim-hero-h1-2 mt-1"
+                  >
                     <em className="font-serif italic font-normal text-gold/95">
                       American Spirit.
                     </em>
@@ -1105,9 +1167,15 @@ function Index() {
         {/* 2. OUR STORY & PHILOSOPHY                                             */}
         {/* ===================================================================== */}
         <section
-          id="our-story"
-          className="relative bg-charcoal py-28 lg:py-36 overflow-hidden"
+          id="story"
+          className="scroll-mt-24 relative bg-charcoal py-28 lg:py-36 overflow-hidden"
         >
+          <span
+            id="our-story"
+            className="scroll-mt-24 pointer-events-none absolute -top-24"
+            aria-hidden="true"
+          />
+
           <div className="mx-auto max-w-7xl px-6 lg:px-12">
             <div className="grid gap-16 lg:grid-cols-12 lg:items-center">
               <div className="lg:col-span-7 reveal-on-scroll">
@@ -1200,7 +1268,7 @@ function Index() {
         {/* ===================================================================== */}
         <section
           id="identity"
-          className="relative overflow-hidden bg-espresso py-28 lg:py-36"
+          className="scroll-mt-24 relative overflow-hidden bg-espresso py-28 lg:py-36"
         >
           <div className="mx-auto max-w-7xl px-6 lg:px-12">
             {/* Visual Transition Banner: Artisanal Ingredients */}
@@ -1243,31 +1311,28 @@ function Index() {
               <div className="mt-8 mx-auto grid w-full max-w-sm grid-cols-3 border border-ivory/15 bg-charcoal/60 p-1 sm:inline-flex sm:w-auto sm:max-w-none">
                 <button
                   onClick={() => setActiveDuality("both")}
-                  className={`px-1.5 py-2 sm:px-5 text-[0.58rem] sm:text-[0.68rem] uppercase tracking-[0.08em] sm:tracking-[0.22em] transition-all flex items-center justify-center text-center font-medium leading-tight ${
-                    activeDuality === "both"
-                      ? "bg-gold text-espresso font-semibold"
-                      : "text-ivory/60 hover:text-ivory"
-                  }`}
+                  className={`px-1.5 py-2 sm:px-5 text-[0.58rem] sm:text-[0.68rem] uppercase tracking-[0.08em] sm:tracking-[0.22em] transition-all flex items-center justify-center text-center font-medium leading-tight ${activeDuality === "both"
+                    ? "bg-gold text-espresso font-semibold"
+                    : "text-ivory/60 hover:text-ivory"
+                    }`}
                 >
                   Convergence
                 </button>
                 <button
                   onClick={() => setActiveDuality("italian")}
-                  className={`px-1.5 py-2 sm:px-5 text-[0.58rem] sm:text-[0.68rem] uppercase tracking-[0.08em] sm:tracking-[0.22em] transition-all flex items-center justify-center text-center font-medium leading-tight ${
-                    activeDuality === "italian"
-                      ? "bg-wine text-ivory font-semibold"
-                      : "text-ivory/60 hover:text-ivory"
-                  }`}
+                  className={`px-1.5 py-2 sm:px-5 text-[0.58rem] sm:text-[0.68rem] uppercase tracking-[0.08em] sm:tracking-[0.22em] transition-all flex items-center justify-center text-center font-medium leading-tight ${activeDuality === "italian"
+                    ? "bg-wine text-ivory font-semibold"
+                    : "text-ivory/60 hover:text-ivory"
+                    }`}
                 >
                   Italian Soul
                 </button>
                 <button
                   onClick={() => setActiveDuality("american")}
-                  className={`px-1.5 py-2 sm:px-5 text-[0.58rem] sm:text-[0.68rem] uppercase tracking-[0.08em] sm:tracking-[0.22em] transition-all flex items-center justify-center text-center font-medium leading-tight ${
-                    activeDuality === "american"
-                      ? "bg-terracotta text-ivory font-semibold"
-                      : "text-ivory/60 hover:text-ivory"
-                  }`}
+                  className={`px-1.5 py-2 sm:px-5 text-[0.58rem] sm:text-[0.68rem] uppercase tracking-[0.08em] sm:tracking-[0.22em] transition-all flex items-center justify-center text-center font-medium leading-tight ${activeDuality === "american"
+                    ? "bg-terracotta text-ivory font-semibold"
+                    : "text-ivory/60 hover:text-ivory"
+                    }`}
                 >
                   American Spirit
                 </button>
@@ -1278,11 +1343,10 @@ function Index() {
             <div className="mt-16 grid items-center gap-10 lg:gap-8 xl:gap-12 lg:grid-cols-12 w-full min-w-0">
               {/* Italian Wing */}
               <div
-                className={`transition-all duration-700 min-w-0 w-full lg:col-span-4 ${
-                  activeDuality === "american"
-                    ? "opacity-30 blur-[1px]"
-                    : "opacity-100"
-                }`}
+                className={`transition-all duration-700 min-w-0 w-full lg:col-span-4 ${activeDuality === "american"
+                  ? "opacity-30 blur-[1px]"
+                  : "opacity-100"
+                  }`}
               >
                 <div className="border-t border-gold/30 pt-6 min-w-0 w-full">
                   <span className="font-serif text-[clamp(2.1rem,2.8vw,3.6rem)] xl:text-[clamp(2.5rem,3.4vw,4.4rem)] font-light leading-none tracking-tight text-ivory block break-normal">
@@ -1382,11 +1446,10 @@ function Index() {
 
               {/* American Wing */}
               <div
-                className={`transition-all duration-700 min-w-0 w-full lg:col-span-4 ${
-                  activeDuality === "italian"
-                    ? "opacity-30 blur-[1px]"
-                    : "opacity-100"
-                }`}
+                className={`transition-all duration-700 min-w-0 w-full lg:col-span-4 ${activeDuality === "italian"
+                  ? "opacity-30 blur-[1px]"
+                  : "opacity-100"
+                  }`}
               >
                 <div className="border-t border-terracotta/40 pt-6 text-left lg:text-right min-w-0 w-full">
                   <span className="font-serif text-[clamp(2.1rem,2.8vw,3.6rem)] xl:text-[clamp(2.5rem,3.4vw,4.4rem)] font-light leading-none tracking-tight text-terracotta block break-normal">
@@ -1425,7 +1488,7 @@ function Index() {
         {/* ===================================================================== */}
         <section
           id="atmosphere"
-          className="relative overflow-hidden bg-charcoal py-28 lg:py-36"
+          className="scroll-mt-24 relative overflow-hidden bg-charcoal py-28 lg:py-36"
         >
           <div className="mx-auto max-w-7xl px-6 lg:px-12">
             <div className="grid gap-16 lg:grid-cols-12 lg:items-center">
@@ -1477,9 +1540,10 @@ function Index() {
                 >
                   <img
                     src={galleryTableCocktailCoupe}
-                    alt="Handcrafted botanical coupe cocktail with thyme at Tavolina 44"
+                    alt="Handcrafted botanical coupe cocktail with fresh thyme at Tavolina 44 bar"
                     className="editorial-img aspect-[3/4] w-full h-full object-cover brightness-95"
                     loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-espresso/80 via-transparent to-transparent opacity-80" />
                   <div className="absolute bottom-4 left-4 right-4">
@@ -1505,9 +1569,10 @@ function Index() {
                 >
                   <img
                     src={gmapsDiningRoom}
-                    alt="Atmospheric dining room with emerald booths and timber beams at Tavolina 44"
+                    alt="Atmospheric Tavolina 44 dining room with emerald leather banquettes and rustic timber beams"
                     className="editorial-img aspect-[3/4] w-full object-cover brightness-95"
                     loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-espresso/80 via-transparent to-transparent opacity-80" />
                   <div className="absolute bottom-4 left-4 right-4">
@@ -1529,7 +1594,7 @@ function Index() {
         {/* ===================================================================== */}
         <section
           id="reviews"
-          className="relative bg-espresso py-28 lg:py-36 overflow-hidden border-y border-ivory/10"
+          className="scroll-mt-24 relative bg-espresso py-28 lg:py-36 overflow-hidden border-y border-ivory/10"
         >
           <div className="mx-auto max-w-7xl px-6 lg:px-12">
             <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-ivory/15 pb-8 reveal-on-scroll">
@@ -1570,8 +1635,10 @@ function Index() {
                   <img
                     key={activeReview.photo}
                     src={activeReview.photo}
-                    alt={activeReview.highlight}
+                    alt={`${activeReview.highlight} at Tavolina 44 in Katy, Texas`}
                     className="editorial-img h-full w-full object-cover brightness-[0.92]"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-espresso/85 via-transparent to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
@@ -1643,7 +1710,10 @@ function Index() {
         {/* ===================================================================== */}
         {/* 6. SIGNATURE PLATES (Plates with Presence)                             */}
         {/* ===================================================================== */}
-        <section id="plates" className="relative bg-charcoal py-28 lg:py-36">
+        <section
+          id="plates"
+          className="scroll-mt-24 relative bg-charcoal py-28 lg:py-36"
+        >
           <div className="mx-auto max-w-7xl px-6 lg:px-12">
             <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-ivory/15 pb-8 reveal-on-scroll">
               <div>
@@ -1685,9 +1755,10 @@ function Index() {
                       >
                         <img
                           src={dish.image}
-                          alt={dish.title}
+                          alt={`${dish.title} — ${dish.subtitle} at Tavolina 44 in Katy, Texas`}
                           className="editorial-img aspect-[16/11] w-full object-cover brightness-[0.95]"
                           loading="lazy"
+                          decoding="async"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-espresso/80 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity duration-700" />
                         <div className="absolute bottom-5 left-5 hidden sm:block">
@@ -1753,7 +1824,10 @@ function Index() {
         {/* ===================================================================== */}
         {/* 7. DIGITAL MENU — SOURCE OF TRUTH: UPLOADED MENU CARDS                */}
         {/* ===================================================================== */}
-        <section id="menu" className="relative bg-espresso py-28 lg:py-36">
+        <section
+          id="menu"
+          className="scroll-mt-24 relative bg-espresso py-28 lg:py-36"
+        >
           <div className="mx-auto max-w-6xl px-6 lg:px-12">
             {/* Editorial Header */}
             <div className="text-center reveal-on-scroll">
@@ -1772,22 +1846,20 @@ function Index() {
               <div className="mt-8 inline-flex border border-gold/30 bg-charcoal/80 p-1.5 shadow-lg">
                 <button
                   onClick={() => setActiveMenuType("dinner")}
-                  className={`flex items-center gap-2.5 px-6 py-2.5 text-xs uppercase tracking-[0.22em] transition-all duration-300 ${
-                    activeMenuType === "dinner"
-                      ? "bg-gold text-espresso font-semibold"
-                      : "text-ivory/70 hover:text-ivory"
-                  }`}
+                  className={`flex items-center gap-2.5 px-6 py-2.5 text-xs uppercase tracking-[0.22em] transition-all duration-300 ${activeMenuType === "dinner"
+                    ? "bg-gold text-espresso font-semibold"
+                    : "text-ivory/70 hover:text-ivory"
+                    }`}
                 >
                   <UtensilsCrossed size={14} />
                   <span>Dinner Menu</span>
                 </button>
                 <button
                   onClick={() => setActiveMenuType("drinks")}
-                  className={`flex items-center gap-2.5 px-6 py-2.5 text-xs uppercase tracking-[0.22em] transition-all duration-300 ${
-                    activeMenuType === "drinks"
-                      ? "bg-gold text-espresso font-semibold"
-                      : "text-ivory/70 hover:text-ivory"
-                  }`}
+                  className={`flex items-center gap-2.5 px-6 py-2.5 text-xs uppercase tracking-[0.22em] transition-all duration-300 ${activeMenuType === "drinks"
+                    ? "bg-gold text-espresso font-semibold"
+                    : "text-ivory/70 hover:text-ivory"
+                    }`}
                 >
                   <WineIcon size={14} />
                   <span>Drinks &amp; Cellar</span>
@@ -1809,11 +1881,10 @@ function Index() {
                     <button
                       key={cat}
                       onClick={() => setActiveDinnerCategory(cat)}
-                      className={`px-4 py-1.5 text-[0.68rem] uppercase tracking-[0.2em] transition-all duration-200 border ${
-                        activeDinnerCategory === cat
-                          ? "border-gold bg-gold/20 text-gold font-medium"
-                          : "border-ivory/15 bg-charcoal/30 text-ivory/60 hover:border-gold/40 hover:text-ivory"
-                      }`}
+                      className={`px-4 py-1.5 text-[0.68rem] uppercase tracking-[0.2em] transition-all duration-200 border ${activeDinnerCategory === cat
+                        ? "border-gold bg-gold/20 text-gold font-medium"
+                        : "border-ivory/15 bg-charcoal/30 text-ivory/60 hover:border-gold/40 hover:text-ivory"
+                        }`}
                     >
                       {cat}
                     </button>
@@ -1853,101 +1924,101 @@ function Index() {
             <div className="mt-14 space-y-16">
               {activeMenuType === "dinner"
                 ? filteredDinnerMenu.map((group) => (
-                    <div
-                      key={group.category}
-                      className="border border-ivory/10 bg-charcoal/45 p-7 sm:p-11 backdrop-blur-sm shadow-xl reveal-on-scroll"
-                    >
-                      <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-gold/30 pb-5">
-                        <div>
-                          <span className="eyebrow-tag text-gold/90">
-                            {group.tagline}
-                          </span>
-                          <h3 className="mt-1 font-serif text-3xl sm:text-4xl font-light text-ivory">
-                            {group.category}
-                          </h3>
-                        </div>
-                        <span className="mt-2 sm:mt-0 text-[0.65rem] uppercase tracking-[0.25em] text-ivory/50 font-sans">
-                          Tavolina 44 Verified
+                  <div
+                    key={group.category}
+                    className="border border-ivory/10 bg-charcoal/45 p-7 sm:p-11 backdrop-blur-sm shadow-xl reveal-on-scroll"
+                  >
+                    <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-gold/30 pb-5">
+                      <div>
+                        <span className="eyebrow-tag text-gold/90">
+                          {group.tagline}
                         </span>
+                        <h3 className="mt-1 font-serif text-3xl sm:text-4xl font-light text-ivory">
+                          {group.category}
+                        </h3>
                       </div>
-
-                      <div className="mt-8 divide-y divide-ivory/10">
-                        {group.items.map((item) => (
-                          <div
-                            key={item.name}
-                            className="group py-5 first:pt-0 last:pb-0 transition-colors hover:bg-ivory/[0.02]"
-                          >
-                            <div className="flex items-baseline justify-between gap-4">
-                              <div className="flex flex-wrap items-center gap-2.5">
-                                <h4 className="font-serif text-xl sm:text-2xl font-light text-ivory group-hover:text-gold transition-colors">
-                                  {item.name}
-                                </h4>
-                                {item.badge && (
-                                  <span className="border border-gold/30 bg-wine/30 px-2 py-0.5 text-[0.58rem] uppercase tracking-widest text-gold font-medium">
-                                    {item.badge}
-                                  </span>
-                                )}
-                              </div>
-                              <span className="font-sans text-lg font-light text-gold shrink-0 tabular-nums">
-                                {item.price}
-                              </span>
-                            </div>
-                            <p className="mt-1.5 max-w-2xl text-xs sm:text-sm font-light text-bone/75 leading-relaxed">
-                              {item.description}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
+                      <span className="mt-2 sm:mt-0 text-[0.65rem] uppercase tracking-[0.25em] text-ivory/50 font-sans">
+                        Tavolina 44 Verified
+                      </span>
                     </div>
-                  ))
+
+                    <div className="mt-8 divide-y divide-ivory/10">
+                      {group.items.map((item) => (
+                        <div
+                          key={item.name}
+                          className="group py-5 first:pt-0 last:pb-0 transition-colors hover:bg-ivory/[0.02]"
+                        >
+                          <div className="flex items-baseline justify-between gap-4">
+                            <div className="flex flex-wrap items-center gap-2.5">
+                              <h4 className="font-serif text-xl sm:text-2xl font-light text-ivory group-hover:text-gold transition-colors">
+                                {item.name}
+                              </h4>
+                              {item.badge && (
+                                <span className="border border-gold/30 bg-wine/30 px-2 py-0.5 text-[0.58rem] uppercase tracking-widest text-gold font-medium">
+                                  {item.badge}
+                                </span>
+                              )}
+                            </div>
+                            <span className="font-sans text-lg font-light text-gold shrink-0 tabular-nums">
+                              {item.price}
+                            </span>
+                          </div>
+                          <p className="mt-1.5 max-w-2xl text-xs sm:text-sm font-light text-bone/75 leading-relaxed">
+                            {item.description}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))
                 : DRINKS_MENU.map((group) => (
-                    <div
-                      key={group.category}
-                      className="border border-ivory/10 bg-charcoal/45 p-7 sm:p-11 backdrop-blur-sm shadow-xl reveal-on-scroll"
-                    >
-                      <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-gold/30 pb-5">
-                        <div>
-                          <span className="eyebrow-tag text-gold/90">
-                            {group.tagline}
-                          </span>
-                          <h3 className="mt-1 font-serif text-3xl sm:text-4xl font-light text-ivory">
-                            {group.category}
-                          </h3>
-                        </div>
-                        <span className="mt-2 sm:mt-0 text-[0.65rem] uppercase tracking-[0.25em] text-ivory/50 font-sans">
-                          Cellar &amp; Bar
+                  <div
+                    key={group.category}
+                    className="border border-ivory/10 bg-charcoal/45 p-7 sm:p-11 backdrop-blur-sm shadow-xl reveal-on-scroll"
+                  >
+                    <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-gold/30 pb-5">
+                      <div>
+                        <span className="eyebrow-tag text-gold/90">
+                          {group.tagline}
                         </span>
+                        <h3 className="mt-1 font-serif text-3xl sm:text-4xl font-light text-ivory">
+                          {group.category}
+                        </h3>
                       </div>
-
-                      <div className="mt-8 divide-y divide-ivory/10">
-                        {group.items.map((item) => (
-                          <div
-                            key={item.name}
-                            className="group py-5 first:pt-0 last:pb-0 transition-colors hover:bg-ivory/[0.02]"
-                          >
-                            <div className="flex items-baseline justify-between gap-4">
-                              <div className="flex flex-wrap items-center gap-2.5">
-                                <h4 className="font-serif text-xl sm:text-2xl font-light text-ivory group-hover:text-gold transition-colors">
-                                  {item.name}
-                                </h4>
-                                {item.badge && (
-                                  <span className="border border-gold/30 bg-wine/30 px-2 py-0.5 text-[0.58rem] uppercase tracking-widest text-gold font-medium">
-                                    {item.badge}
-                                  </span>
-                                )}
-                              </div>
-                              <span className="font-sans text-lg font-light text-gold shrink-0 tabular-nums">
-                                {item.price}
-                              </span>
-                            </div>
-                            <p className="mt-1.5 max-w-2xl text-xs sm:text-sm font-light text-bone/75 leading-relaxed">
-                              {item.description}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
+                      <span className="mt-2 sm:mt-0 text-[0.65rem] uppercase tracking-[0.25em] text-ivory/50 font-sans">
+                        Cellar &amp; Bar
+                      </span>
                     </div>
-                  ))}
+
+                    <div className="mt-8 divide-y divide-ivory/10">
+                      {group.items.map((item) => (
+                        <div
+                          key={item.name}
+                          className="group py-5 first:pt-0 last:pb-0 transition-colors hover:bg-ivory/[0.02]"
+                        >
+                          <div className="flex items-baseline justify-between gap-4">
+                            <div className="flex flex-wrap items-center gap-2.5">
+                              <h4 className="font-serif text-xl sm:text-2xl font-light text-ivory group-hover:text-gold transition-colors">
+                                {item.name}
+                              </h4>
+                              {item.badge && (
+                                <span className="border border-gold/30 bg-wine/30 px-2 py-0.5 text-[0.58rem] uppercase tracking-widest text-gold font-medium">
+                                  {item.badge}
+                                </span>
+                              )}
+                            </div>
+                            <span className="font-sans text-lg font-light text-gold shrink-0 tabular-nums">
+                              {item.price}
+                            </span>
+                          </div>
+                          <p className="mt-1.5 max-w-2xl text-xs sm:text-sm font-light text-bone/75 leading-relaxed">
+                            {item.description}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
             </div>
 
             {/* Official Disclaimers from Menu Cards */}
@@ -1971,14 +2042,24 @@ function Index() {
         {/* ===================================================================== */}
         {/* 8. GALLERY SECTION                                                    */}
         {/* ===================================================================== */}
-        <section id="gallery" className="relative bg-charcoal py-28 lg:py-36">
+        <section
+          id="gallery"
+          className="scroll-mt-24 relative bg-charcoal py-28 lg:py-36"
+        >
           <div className="mx-auto max-w-7xl px-6 lg:px-12">
             <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-ivory/15 pb-8 reveal-on-scroll">
               <div>
                 <p className="eyebrow-tag text-gold">07 · Visual Archive</p>
                 <h2 className="mt-4 font-serif text-[clamp(2.6rem,5.5vw,5rem)] font-light leading-none text-ivory">
-                  At the <em className="italic text-gold font-normal">Table</em>
+                  Tavolina 44{" "}
+                  <em className="italic text-gold font-normal">Gallery</em>
                 </h2>
+                <p className="mt-4 max-w-2xl text-sm sm:text-base font-light leading-relaxed text-bone/80">
+                  An intimate visual showcase of Tavolina 44 in Katy, Texas.
+                  Explore our warm dining room, hand-rolled pastas,
+                  hearth-charred prime cuts, handcrafted cocktails, and
+                  atmospheric bar at Villagio Town Center.
+                </p>
               </div>
               <div className="mt-4 flex flex-wrap items-center gap-4 md:mt-0">
                 <span className="text-xs uppercase tracking-[0.24em] text-ivory/50 font-sans">
@@ -1988,6 +2069,7 @@ function Index() {
                   href={INSTAGRAM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Follow Tavolina 44 on Instagram for more photos and stories"
                   className="group inline-flex items-center gap-2 rounded-full border border-gold/30 bg-espresso/60 px-3.5 py-1.5 text-[0.68rem] uppercase tracking-[0.2em] text-gold transition-all duration-300 hover:border-gold hover:bg-gold/15 hover:shadow-[0_0_20px_rgba(203,167,118,0.2)]"
                 >
                   <Instagram className="h-3.5 w-3.5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
@@ -2007,7 +2089,7 @@ function Index() {
                 >
                   <img
                     src={img.src}
-                    alt={img.title}
+                    alt={img.alt || img.caption || img.title}
                     className="editorial-img h-full w-full object-cover brightness-95"
                     loading="lazy"
                     decoding="async"
@@ -2033,7 +2115,10 @@ function Index() {
         {/* ===================================================================== */}
         {/* 9. LOCATION & HOURS                                                   */}
         {/* ===================================================================== */}
-        <section id="location" className="relative bg-espresso py-28 lg:py-36">
+        <section
+          id="location"
+          className="scroll-mt-24 relative bg-espresso py-28 lg:py-36"
+        >
           <div className="mx-auto max-w-7xl px-6 lg:px-12">
             <div className="grid gap-16 lg:grid-cols-12 lg:items-center">
               {/* Location Details */}
@@ -2112,8 +2197,9 @@ function Index() {
                       href={GOOGLE_MAPS_URL}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Get Directions to Tavolina 44 at Villagio Town Center"
                     >
-                      <span>Get Directions</span>
+                      <span>Get Directions to Tavolina 44</span>
                       <ArrowUpRight
                         size={16}
                         className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -2139,160 +2225,145 @@ function Index() {
             </div>
           </div>
         </section>
+      </main>
 
-        {/* ===================================================================== */}
-        {/* 10. CONTACT & DRAMATIC FOOTER — Using Official tavolina44.png Logo    */}
-        {/* ===================================================================== */}
-        <footer
-          id="contact"
-          className="relative overflow-hidden bg-ink pt-28 pb-12 lg:pt-36"
-        >
-          <div className="mx-auto max-w-7xl px-6 lg:px-12">
-            <div className="grid gap-12 border-b border-ivory/15 pb-16 lg:grid-cols-12">
-              {/* Brand Col */}
-              <div className="lg:col-span-4">
-                <TavolinaLogo
-                  size="md"
-                  withBackdrop
-                  className="origin-left"
-                  imgClassName="h-12 sm:h-14 w-auto"
-                />
-                <p className="mt-6 max-w-sm text-sm font-light leading-relaxed text-bone/70">
-                  Italian soul and American spirit converging at Villagio Town
-                  Center in Katy, Texas. Dedicated to the craft of the table.
-                </p>
-                <div className="mt-7 text-xs uppercase tracking-[0.24em] text-gold/80 font-medium">
-                  Villagio Town Center · Suite 180
-                </div>
-
-                {/* Prominent Luxury Instagram Card */}
-                <div className="mt-8 pt-6 border-t border-ivory/10">
-                  <p className="eyebrow-tag text-gold text-[0.62rem] mb-3">
-                    Connect With Us
-                  </p>
-                  <a
-                    href={INSTAGRAM_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`Follow Tavolina 44 on Instagram ${INSTAGRAM_HANDLE}`}
-                    className="group relative flex items-center justify-between overflow-hidden rounded-sm border border-gold/30 bg-espresso/70 p-4 transition-all duration-500 hover:border-gold hover:bg-gold/10 hover:shadow-[0_0_30px_rgba(203,167,118,0.2)] focus:outline-none focus:ring-1 focus:ring-gold/60"
-                  >
-                    {/* Shimmer sweep */}
-                    <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-gold/15 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
-
-                    <div className="relative z-10 flex items-center gap-3.5">
-                      <div className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/40 bg-ink text-gold shadow-inner transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:border-gold">
-                        <Instagram className="h-5 w-5" />
-                      </div>
-                      <div>
-                        <div className="flex items-center gap-2">
-                          <span className="font-serif text-lg font-light tracking-wide text-ivory transition-colors duration-300 group-hover:text-gold">
-                            {INSTAGRAM_HANDLE}
-                          </span>
-                          <span className="relative flex h-2 w-2">
-                            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold/60 opacity-75 duration-1000" />
-                            <span className="relative inline-flex h-2 w-2 rounded-full bg-gold" />
-                          </span>
-                        </div>
-                        <p className="text-[0.7rem] uppercase tracking-[0.18em] text-bone/60">
-                          Daily Craft · Behind The Hearth
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full border border-ivory/15 text-ivory/60 transition-all duration-300 group-hover:border-gold group-hover:bg-gold group-hover:text-espresso">
-                      <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              {/* Navigation Links */}
-              <div className="lg:col-span-4 lg:col-start-6">
-                <p className="eyebrow-tag text-gold">Navigation</p>
-                <div className="mt-6 grid grid-cols-2 gap-4 text-sm font-light text-bone/80">
-                  {navItems.map((item) => (
-                    <button
-                      key={item.id}
-                      onClick={() => scrollToSection(item.id)}
-                      className="text-left hover:text-gold transition-colors"
-                    >
-                      {item.label}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Direct Contact & Hours */}
-              <div className="lg:col-span-3">
-                <p className="eyebrow-tag text-gold">
-                  Direct Contact &amp; Hours
-                </p>
-                <div className="mt-6 space-y-3 text-sm font-light text-bone/80">
-                  <p>22756 Westheimer Parkway, Suite 180</p>
-                  <p>Katy, TX 77450</p>
-                  <p>
-                    <a
-                      href="tel:+13463876092"
-                      className="text-gold hover:underline font-normal"
-                    >
-                      (346) 387-6092
-                    </a>
-                  </p>
-                  <div className="pt-2 text-xs text-ivory/50">
-                    <p>Sun–Thu: 5–10 PM</p>
-                    <p>Fri &amp; Sat: 5–11 PM</p>
-                  </div>
-
-                  {/* Direct Social Link */}
-                  <div className="pt-4 border-t border-ivory/10">
-                    <p className="text-[0.65rem] uppercase tracking-[0.24em] text-gold/80 font-medium mb-2">
-                      Social &amp; Visuals
-                    </p>
-                    <a
-                      href={INSTAGRAM_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group inline-flex items-center gap-2 text-sm text-bone/90 transition-colors hover:text-gold"
-                    >
-                      <Instagram className="h-4 w-4 text-gold transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
-                      <span className="underline-offset-4 group-hover:underline">
-                        Instagram {INSTAGRAM_HANDLE}
-                      </span>
-                      <ArrowUpRight className="h-3.5 w-3.5 text-gold/60 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-gold" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Monumental Watermark Backdrop */}
-            <div className="relative select-none overflow-hidden pt-10 pb-6 text-center">
-              <span className="block font-serif text-[clamp(4.5rem,14vw,14rem)] font-light leading-none tracking-tighter text-ivory/[0.04]">
-                TAVOLINA 44
-              </span>
-            </div>
-
-            {/* Bottom Copyright & Verification */}
-            <div className="flex flex-col sm:flex-row items-center justify-between border-t border-ivory/10 pt-8 text-[0.68rem] uppercase tracking-[0.22em] text-ivory/40">
-              <p>© 2026 Tavolina 44. All rights reserved.</p>
-              <a
-                href={INSTAGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 sm:mt-0 inline-flex items-center gap-2 text-gold/80 transition-colors duration-300 hover:text-gold hover:underline underline-offset-4"
-              >
-                <Instagram className="h-3 w-3 text-gold" />
-                <span>Follow {INSTAGRAM_HANDLE}</span>
-              </a>
-              <p className="mt-3 sm:mt-0">
-                Villagio Town Center · Katy, Texas · Italian &amp; American
-                Dining
+      {/* ===================================================================== */}
+      {/* 10. CONTACT & DRAMATIC FOOTER — Using Official tavolina44.png Logo    */}
+      {/* ===================================================================== */}
+      <footer
+        id="contact"
+        className="scroll-mt-24 relative overflow-hidden bg-ink pt-28 pb-12 lg:pt-36"
+      >
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="grid gap-12 border-b border-ivory/15 pb-16 lg:grid-cols-12">
+            {/* Brand Col */}
+            <div className="lg:col-span-4">
+              <TavolinaLogo
+                size="md"
+                withBackdrop
+                className="origin-left"
+                imgClassName="h-12 sm:h-14 w-auto"
+              />
+              <p className="mt-6 max-w-sm text-sm font-light leading-relaxed text-bone/70">
+                Italian soul and American spirit converging at Villagio Town
+                Center in Katy, Texas. Dedicated to the craft of the table.
               </p>
+              <div className="mt-7 text-xs uppercase tracking-[0.24em] text-gold/80 font-medium">
+                Villagio Town Center · Suite 180
+              </div>
+
+              {/* Prominent Luxury Instagram Card */}
+              <div className="mt-8 pt-6 border-t border-ivory/10">
+                <p className="eyebrow-tag text-gold text-[0.62rem] mb-3">
+                  Connect With Us
+                </p>
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Follow Tavolina 44 on Instagram ${INSTAGRAM_HANDLE}`}
+                  className="group relative flex items-center justify-between overflow-hidden rounded-sm border border-gold/30 bg-espresso/70 p-4 transition-all duration-500 hover:border-gold hover:bg-gold/10 hover:shadow-[0_0_30px_rgba(203,167,118,0.2)] focus:outline-none focus:ring-1 focus:ring-gold/60"
+                >
+                  {/* Shimmer sweep */}
+                  <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-gold/15 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
+
+                  <div className="relative z-10 flex items-center gap-3.5">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/40 bg-ink text-gold shadow-inner transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:border-gold">
+                      <Instagram className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <span className="font-serif text-lg font-light tracking-wide text-ivory transition-colors duration-300 group-hover:text-gold">
+                          {INSTAGRAM_HANDLE}
+                        </span>
+                        <span className="relative flex h-2 w-2">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold/60 opacity-75 duration-1000" />
+                          <span className="relative inline-flex h-2 w-2 rounded-full bg-gold" />
+                        </span>
+                      </div>
+                      <p className="text-[0.7rem] uppercase tracking-[0.18em] text-bone/60">
+                        Daily Craft · Behind The Hearth
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full border border-ivory/15 text-ivory/60 transition-all duration-300 group-hover:border-gold group-hover:bg-gold group-hover:text-espresso">
+                    <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            {/* Navigation Links */}
+            <div className="lg:col-span-4 lg:col-start-6">
+              <p className="eyebrow-tag text-gold">Navigation</p>
+              <div className="mt-6 grid grid-cols-2 gap-4 text-sm font-light text-bone/80">
+                {navItems.map((item) => (
+                  <a
+                    key={item.id}
+                    href={`#${item.id}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(item.id);
+                    }}
+                    className="text-left hover:text-gold transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Direct Contact & Hours */}
+            <div className="lg:col-span-3">
+              <p className="eyebrow-tag text-gold">
+                Direct Contact &amp; Hours
+              </p>
+              <div className="mt-6 space-y-3 text-sm font-light text-bone/80">
+                <p>22756 Westheimer Parkway, Suite 180</p>
+                <p>Katy, TX 77450</p>
+                <p>
+                  <a
+                    href="tel:+13463876092"
+                    className="text-gold hover:underline font-normal"
+                  >
+                    (346) 387-6092
+                  </a>
+                </p>
+                <div className="pt-2 text-sm text-ivory/50">
+                  <p>Sun – Thu &nbsp;:&nbsp; 5 PM – 10 PM</p>
+                  <p>Fri &amp; Sat &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; 5 PM – 11 PM</p>
+                </div>
+
+              </div>
             </div>
           </div>
-        </footer>
-      </main>
+
+          {/* Monumental Watermark Backdrop */}
+          <div className="relative select-none overflow-hidden pt-10 pb-6 text-center">
+            <span className="block font-serif text-[clamp(4.5rem,14vw,14rem)] font-light leading-none tracking-tighter text-ivory/[0.04]">
+              TAVOLINA 44
+            </span>
+          </div>
+
+          {/* Bottom Copyright & Verification */}
+          <div className="flex flex-col sm:flex-row items-center justify-between border-t border-ivory/10 pt-8 text-[0.68rem] uppercase tracking-[0.22em] text-ivory/40">
+            <p>© 2026 Tavolina 44. All rights reserved.</p>
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 sm:mt-0 inline-flex items-center gap-2 text-gold/80 transition-colors duration-300 hover:text-gold hover:underline underline-offset-4"
+            >
+              <Instagram className="h-3 w-3 text-gold" />
+              <span>Follow {INSTAGRAM_HANDLE}</span>
+            </a>
+            <p className="mt-3 sm:mt-0">
+              Villagio Town Center · Katy, Texas · Italian &amp; American Dining
+            </p>
+          </div>
+        </div>
+      </footer>
 
       {/* ===================================================================== */}
       {/* FULLSCREEN LIGHTBOX MODAL                                             */}
