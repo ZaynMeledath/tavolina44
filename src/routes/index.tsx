@@ -16,7 +16,7 @@ import {
   Star,
   UtensilsCrossed,
   Wine as WineIcon,
-  X
+  X,
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
@@ -829,10 +829,11 @@ function Index() {
       {/* MINIMAL LUXURY NAVIGATION                                               */}
       {/* ======================================================================= */}
       <header
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled
-          ? "nav-blur py-3.5"
-          : "bg-gradient-to-b from-espresso/90 via-espresso/40 to-transparent py-5 lg:py-6"
-          }`}
+        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+          scrolled
+            ? "nav-blur py-3.5"
+            : "bg-gradient-to-b from-espresso/90 via-espresso/40 to-transparent py-5 lg:py-6"
+        }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-12">
           {/* Brand Logo Using Real tavolina44.png on the Left */}
@@ -878,22 +879,25 @@ function Index() {
             aria-expanded={mobileOpen}
           >
             <span
-              className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${mobileOpen ? "translate-y-[3.5px] rotate-45" : ""
-                }`}
+              className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${
+                mobileOpen ? "translate-y-[3.5px] rotate-45" : ""
+              }`}
             />
             <span
-              className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${mobileOpen ? "-translate-y-[3.5px] -rotate-45" : ""
-                }`}
+              className={`h-[1px] w-6 bg-current transition-all duration-300 ease-out ${
+                mobileOpen ? "-translate-y-[3.5px] -rotate-45" : ""
+              }`}
             />
           </button>
         </div>
 
         {/* Mobile Fullscreen Drawer with Silky Smooth Open/Close Animation */}
         <div
-          className={`fixed inset-x-0 top-0 z-[-1] flex min-h-screen flex-col justify-between bg-espresso/98 px-8 pb-12 pt-28 backdrop-blur-2xl transition-all duration-500 md:hidden ${mobileOpen
-            ? "pointer-events-auto opacity-100 translate-y-0"
-            : "pointer-events-none opacity-0 -translate-y-4"
-            }`}
+          className={`fixed inset-x-0 top-0 z-[-1] flex min-h-screen flex-col justify-between bg-espresso/98 px-8 pb-12 pt-28 backdrop-blur-2xl transition-all duration-500 md:hidden ${
+            mobileOpen
+              ? "pointer-events-auto opacity-100 translate-y-0"
+              : "pointer-events-none opacity-0 -translate-y-4"
+          }`}
           aria-hidden={!mobileOpen}
         >
           <nav className="flex flex-col space-y-5">
@@ -1157,31 +1161,34 @@ function Index() {
               </p>
 
               {/* Duality Filter Tabs */}
-              <div className="mt-8 inline-flex border border-ivory/15 bg-charcoal/60 p-1">
+              <div className="mt-8 mx-auto grid w-full max-w-sm grid-cols-3 border border-ivory/15 bg-charcoal/60 p-1 sm:inline-flex sm:w-auto sm:max-w-none">
                 <button
                   onClick={() => setActiveDuality("both")}
-                  className={`px-5 py-2 text-[0.68rem] uppercase tracking-[0.22em] transition-all ${activeDuality === "both"
-                    ? "bg-gold text-espresso font-semibold"
-                    : "text-ivory/60 hover:text-ivory"
-                    }`}
+                  className={`px-1.5 py-2 sm:px-5 text-[0.58rem] sm:text-[0.68rem] uppercase tracking-[0.08em] sm:tracking-[0.22em] transition-all flex items-center justify-center text-center font-medium leading-tight ${
+                    activeDuality === "both"
+                      ? "bg-gold text-espresso font-semibold"
+                      : "text-ivory/60 hover:text-ivory"
+                  }`}
                 >
                   Convergence
                 </button>
                 <button
                   onClick={() => setActiveDuality("italian")}
-                  className={`px-5 py-2 text-[0.68rem] uppercase tracking-[0.22em] transition-all ${activeDuality === "italian"
-                    ? "bg-wine text-ivory font-semibold"
-                    : "text-ivory/60 hover:text-ivory"
-                    }`}
+                  className={`px-1.5 py-2 sm:px-5 text-[0.58rem] sm:text-[0.68rem] uppercase tracking-[0.08em] sm:tracking-[0.22em] transition-all flex items-center justify-center text-center font-medium leading-tight ${
+                    activeDuality === "italian"
+                      ? "bg-wine text-ivory font-semibold"
+                      : "text-ivory/60 hover:text-ivory"
+                  }`}
                 >
                   Italian Soul
                 </button>
                 <button
                   onClick={() => setActiveDuality("american")}
-                  className={`px-5 py-2 text-[0.68rem] uppercase tracking-[0.22em] transition-all ${activeDuality === "american"
-                    ? "bg-terracotta text-ivory font-semibold"
-                    : "text-ivory/60 hover:text-ivory"
-                    }`}
+                  className={`px-1.5 py-2 sm:px-5 text-[0.58rem] sm:text-[0.68rem] uppercase tracking-[0.08em] sm:tracking-[0.22em] transition-all flex items-center justify-center text-center font-medium leading-tight ${
+                    activeDuality === "american"
+                      ? "bg-terracotta text-ivory font-semibold"
+                      : "text-ivory/60 hover:text-ivory"
+                  }`}
                 >
                   American Spirit
                 </button>
@@ -1192,10 +1199,11 @@ function Index() {
             <div className="mt-16 grid items-center gap-10 lg:gap-8 xl:gap-12 lg:grid-cols-12 w-full min-w-0">
               {/* Italian Wing */}
               <div
-                className={`transition-all duration-700 min-w-0 w-full lg:col-span-4 ${activeDuality === "american"
-                  ? "opacity-30 blur-[1px]"
-                  : "opacity-100"
-                  }`}
+                className={`transition-all duration-700 min-w-0 w-full lg:col-span-4 ${
+                  activeDuality === "american"
+                    ? "opacity-30 blur-[1px]"
+                    : "opacity-100"
+                }`}
               >
                 <div className="border-t border-gold/30 pt-6 min-w-0 w-full">
                   <span className="font-serif text-[clamp(2.1rem,2.8vw,3.6rem)] xl:text-[clamp(2.5rem,3.4vw,4.4rem)] font-light leading-none tracking-tight text-ivory block break-normal">
@@ -1295,10 +1303,11 @@ function Index() {
 
               {/* American Wing */}
               <div
-                className={`transition-all duration-700 min-w-0 w-full lg:col-span-4 ${activeDuality === "italian"
-                  ? "opacity-30 blur-[1px]"
-                  : "opacity-100"
-                  }`}
+                className={`transition-all duration-700 min-w-0 w-full lg:col-span-4 ${
+                  activeDuality === "italian"
+                    ? "opacity-30 blur-[1px]"
+                    : "opacity-100"
+                }`}
               >
                 <div className="border-t border-terracotta/40 pt-6 text-left lg:text-right min-w-0 w-full">
                   <span className="font-serif text-[clamp(2.1rem,2.8vw,3.6rem)] xl:text-[clamp(2.5rem,3.4vw,4.4rem)] font-light leading-none tracking-tight text-terracotta block break-normal">
@@ -1684,20 +1693,22 @@ function Index() {
               <div className="mt-8 inline-flex border border-gold/30 bg-charcoal/80 p-1.5 shadow-lg">
                 <button
                   onClick={() => setActiveMenuType("dinner")}
-                  className={`flex items-center gap-2.5 px-6 py-2.5 text-xs uppercase tracking-[0.22em] transition-all duration-300 ${activeMenuType === "dinner"
-                    ? "bg-gold text-espresso font-semibold"
-                    : "text-ivory/70 hover:text-ivory"
-                    }`}
+                  className={`flex items-center gap-2.5 px-6 py-2.5 text-xs uppercase tracking-[0.22em] transition-all duration-300 ${
+                    activeMenuType === "dinner"
+                      ? "bg-gold text-espresso font-semibold"
+                      : "text-ivory/70 hover:text-ivory"
+                  }`}
                 >
                   <UtensilsCrossed size={14} />
                   <span>Dinner Menu</span>
                 </button>
                 <button
                   onClick={() => setActiveMenuType("drinks")}
-                  className={`flex items-center gap-2.5 px-6 py-2.5 text-xs uppercase tracking-[0.22em] transition-all duration-300 ${activeMenuType === "drinks"
-                    ? "bg-gold text-espresso font-semibold"
-                    : "text-ivory/70 hover:text-ivory"
-                    }`}
+                  className={`flex items-center gap-2.5 px-6 py-2.5 text-xs uppercase tracking-[0.22em] transition-all duration-300 ${
+                    activeMenuType === "drinks"
+                      ? "bg-gold text-espresso font-semibold"
+                      : "text-ivory/70 hover:text-ivory"
+                  }`}
                 >
                   <WineIcon size={14} />
                   <span>Drinks &amp; Cellar</span>
@@ -1719,10 +1730,11 @@ function Index() {
                     <button
                       key={cat}
                       onClick={() => setActiveDinnerCategory(cat)}
-                      className={`px-4 py-1.5 text-[0.68rem] uppercase tracking-[0.2em] transition-all duration-200 border ${activeDinnerCategory === cat
-                        ? "border-gold bg-gold/20 text-gold font-medium"
-                        : "border-ivory/15 bg-charcoal/30 text-ivory/60 hover:border-gold/40 hover:text-ivory"
-                        }`}
+                      className={`px-4 py-1.5 text-[0.68rem] uppercase tracking-[0.2em] transition-all duration-200 border ${
+                        activeDinnerCategory === cat
+                          ? "border-gold bg-gold/20 text-gold font-medium"
+                          : "border-ivory/15 bg-charcoal/30 text-ivory/60 hover:border-gold/40 hover:text-ivory"
+                      }`}
                     >
                       {cat}
                     </button>
@@ -1762,101 +1774,101 @@ function Index() {
             <div className="mt-14 space-y-16">
               {activeMenuType === "dinner"
                 ? filteredDinnerMenu.map((group) => (
-                  <div
-                    key={group.category}
-                    className="border border-ivory/10 bg-charcoal/45 p-7 sm:p-11 backdrop-blur-sm shadow-xl reveal-on-scroll"
-                  >
-                    <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-gold/30 pb-5">
-                      <div>
-                        <span className="eyebrow-tag text-gold/90">
-                          {group.tagline}
-                        </span>
-                        <h3 className="mt-1 font-serif text-3xl sm:text-4xl font-light text-ivory">
-                          {group.category}
-                        </h3>
-                      </div>
-                      <span className="mt-2 sm:mt-0 text-[0.65rem] uppercase tracking-[0.25em] text-ivory/50 font-sans">
-                        Tavolina 44 Verified
-                      </span>
-                    </div>
-
-                    <div className="mt-8 divide-y divide-ivory/10">
-                      {group.items.map((item) => (
-                        <div
-                          key={item.name}
-                          className="group py-5 first:pt-0 last:pb-0 transition-colors hover:bg-ivory/[0.02]"
-                        >
-                          <div className="flex items-baseline justify-between gap-4">
-                            <div className="flex flex-wrap items-center gap-2.5">
-                              <h4 className="font-serif text-xl sm:text-2xl font-light text-ivory group-hover:text-gold transition-colors">
-                                {item.name}
-                              </h4>
-                              {item.badge && (
-                                <span className="border border-gold/30 bg-wine/30 px-2 py-0.5 text-[0.58rem] uppercase tracking-widest text-gold font-medium">
-                                  {item.badge}
-                                </span>
-                              )}
-                            </div>
-                            <span className="font-sans text-lg font-light text-gold shrink-0 tabular-nums">
-                              {item.price}
-                            </span>
-                          </div>
-                          <p className="mt-1.5 max-w-2xl text-xs sm:text-sm font-light text-bone/75 leading-relaxed">
-                            {item.description}
-                          </p>
+                    <div
+                      key={group.category}
+                      className="border border-ivory/10 bg-charcoal/45 p-7 sm:p-11 backdrop-blur-sm shadow-xl reveal-on-scroll"
+                    >
+                      <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-gold/30 pb-5">
+                        <div>
+                          <span className="eyebrow-tag text-gold/90">
+                            {group.tagline}
+                          </span>
+                          <h3 className="mt-1 font-serif text-3xl sm:text-4xl font-light text-ivory">
+                            {group.category}
+                          </h3>
                         </div>
-                      ))}
+                        <span className="mt-2 sm:mt-0 text-[0.65rem] uppercase tracking-[0.25em] text-ivory/50 font-sans">
+                          Tavolina 44 Verified
+                        </span>
+                      </div>
+
+                      <div className="mt-8 divide-y divide-ivory/10">
+                        {group.items.map((item) => (
+                          <div
+                            key={item.name}
+                            className="group py-5 first:pt-0 last:pb-0 transition-colors hover:bg-ivory/[0.02]"
+                          >
+                            <div className="flex items-baseline justify-between gap-4">
+                              <div className="flex flex-wrap items-center gap-2.5">
+                                <h4 className="font-serif text-xl sm:text-2xl font-light text-ivory group-hover:text-gold transition-colors">
+                                  {item.name}
+                                </h4>
+                                {item.badge && (
+                                  <span className="border border-gold/30 bg-wine/30 px-2 py-0.5 text-[0.58rem] uppercase tracking-widest text-gold font-medium">
+                                    {item.badge}
+                                  </span>
+                                )}
+                              </div>
+                              <span className="font-sans text-lg font-light text-gold shrink-0 tabular-nums">
+                                {item.price}
+                              </span>
+                            </div>
+                            <p className="mt-1.5 max-w-2xl text-xs sm:text-sm font-light text-bone/75 leading-relaxed">
+                              {item.description}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ))
+                  ))
                 : DRINKS_MENU.map((group) => (
-                  <div
-                    key={group.category}
-                    className="border border-ivory/10 bg-charcoal/45 p-7 sm:p-11 backdrop-blur-sm shadow-xl reveal-on-scroll"
-                  >
-                    <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-gold/30 pb-5">
-                      <div>
-                        <span className="eyebrow-tag text-gold/90">
-                          {group.tagline}
-                        </span>
-                        <h3 className="mt-1 font-serif text-3xl sm:text-4xl font-light text-ivory">
-                          {group.category}
-                        </h3>
-                      </div>
-                      <span className="mt-2 sm:mt-0 text-[0.65rem] uppercase tracking-[0.25em] text-ivory/50 font-sans">
-                        Cellar &amp; Bar
-                      </span>
-                    </div>
-
-                    <div className="mt-8 divide-y divide-ivory/10">
-                      {group.items.map((item) => (
-                        <div
-                          key={item.name}
-                          className="group py-5 first:pt-0 last:pb-0 transition-colors hover:bg-ivory/[0.02]"
-                        >
-                          <div className="flex items-baseline justify-between gap-4">
-                            <div className="flex flex-wrap items-center gap-2.5">
-                              <h4 className="font-serif text-xl sm:text-2xl font-light text-ivory group-hover:text-gold transition-colors">
-                                {item.name}
-                              </h4>
-                              {item.badge && (
-                                <span className="border border-gold/30 bg-wine/30 px-2 py-0.5 text-[0.58rem] uppercase tracking-widest text-gold font-medium">
-                                  {item.badge}
-                                </span>
-                              )}
-                            </div>
-                            <span className="font-sans text-lg font-light text-gold shrink-0 tabular-nums">
-                              {item.price}
-                            </span>
-                          </div>
-                          <p className="mt-1.5 max-w-2xl text-xs sm:text-sm font-light text-bone/75 leading-relaxed">
-                            {item.description}
-                          </p>
+                    <div
+                      key={group.category}
+                      className="border border-ivory/10 bg-charcoal/45 p-7 sm:p-11 backdrop-blur-sm shadow-xl reveal-on-scroll"
+                    >
+                      <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-gold/30 pb-5">
+                        <div>
+                          <span className="eyebrow-tag text-gold/90">
+                            {group.tagline}
+                          </span>
+                          <h3 className="mt-1 font-serif text-3xl sm:text-4xl font-light text-ivory">
+                            {group.category}
+                          </h3>
                         </div>
-                      ))}
+                        <span className="mt-2 sm:mt-0 text-[0.65rem] uppercase tracking-[0.25em] text-ivory/50 font-sans">
+                          Cellar &amp; Bar
+                        </span>
+                      </div>
+
+                      <div className="mt-8 divide-y divide-ivory/10">
+                        {group.items.map((item) => (
+                          <div
+                            key={item.name}
+                            className="group py-5 first:pt-0 last:pb-0 transition-colors hover:bg-ivory/[0.02]"
+                          >
+                            <div className="flex items-baseline justify-between gap-4">
+                              <div className="flex flex-wrap items-center gap-2.5">
+                                <h4 className="font-serif text-xl sm:text-2xl font-light text-ivory group-hover:text-gold transition-colors">
+                                  {item.name}
+                                </h4>
+                                {item.badge && (
+                                  <span className="border border-gold/30 bg-wine/30 px-2 py-0.5 text-[0.58rem] uppercase tracking-widest text-gold font-medium">
+                                    {item.badge}
+                                  </span>
+                                )}
+                              </div>
+                              <span className="font-sans text-lg font-light text-gold shrink-0 tabular-nums">
+                                {item.price}
+                              </span>
+                            </div>
+                            <p className="mt-1.5 max-w-2xl text-xs sm:text-sm font-light text-bone/75 leading-relaxed">
+                              {item.description}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
             </div>
 
             {/* Official Disclaimers from Menu Cards */}
