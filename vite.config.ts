@@ -31,10 +31,10 @@ export default defineConfig(({ command }) => ({
     }),
     ...(command === "build"
       ? [
-          nitro({
-            defaultPreset: "cloudflare-module",
-          }),
-        ]
+        nitro({
+          defaultPreset: "cloudflare-module",
+        }),
+      ]
       : []),
     viteReact(),
   ],
