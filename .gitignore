@@ -7,11 +7,27 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+
+# Build & Framework outputs
 dist
 dist-ssr
-*.local
 .output
+.tanstack
+.wrangler
+.nitro
+
+# Environment files
+.env
+.env.*
+*.local
+!.env.example
+
+# Caches & Diagnostics
+*.tsbuildinfo
+.eslintcache
+coverage
 
 # Editor directories and files
 .vscode/*
